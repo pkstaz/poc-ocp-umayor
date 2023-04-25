@@ -1,0 +1,387 @@
+[
+	{
+		"academicoId": "001",
+		"avatar": "/assets/images/avatars/avatar9.png",
+		"username": "marty",
+		"nombre": "Marty Seamus",
+		"apellido": "McFly",
+		"area": "Full Stack Developer",
+		"company": "Universidad Mayor",
+		"email": "mmcfly@umayor.cl",
+		"emailpersonal": "mmcfly@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			},
+			{
+				"nombre": "Gestor",
+				"rolid": 2
+			}
+		],
+		"status": true,
+		"typeDay": "FullTime",
+		"EscCarrNucl":"Facultad de Ciencias",
+		"funcion": "Design"			
+	},
+	{
+		"academicoId": "002",
+		"avatar": "/assets/images/avatars/avatar8.png",
+		"username": "lorraine",
+		"nombre": "Lorraine",
+		"apellido": "McFly",
+		"area": "Frontend Developer",
+		"company": "Universidad Mayor",
+		"email": "lmcfly@umayor.cl",
+		"emailpersonal": "lmcfly@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			},
+			{
+				"nombre": "Gestor",
+				"rolid": 2
+			}
+		],
+		"status": true,
+		"typeDay": "FullTime",
+		"EscCarrNucl": "Facultad de Estudios Interdisciplinarios",
+		"funcion": "Design"			
+	},
+	{
+		"academicoId": "003",
+		"avatar": "/assets/images/avatars/avatar4.png",
+		"username": "George",
+		"nombre": "George Douglas",
+		"apellido": "McFly",
+		"area": "UI/UX Designer",
+		"company": "Externo",
+		"email": "gmcfly@umayor.cl",
+		"emailpersonal": "gmcfly@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Gestor",
+				"rolid": 2
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "FullTime",
+		"EscCarrNucl": "Facultad de Artes",
+		"funcion": "Software Development"			
+	},
+	{
+		"academicoId": "004",
+		"avatar": "/assets/images/avatars/avatar1.png",
+		"username": "Brown",
+		"nombre": "Dr. Emmett Lathrop",
+		"apellido": "Brown",
+		"area": "Backend Developer",
+		"company": "Universidad Mayor",
+		"email": "ebrown@umayor.cl",
+		"emailpersonal": "ebrown@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Gestor",
+				"rolid": 2
+			},
+			{
+				"nombre": "Auditor",
+				"rolid": 3
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "PartTime",
+		"EscCarrNucl": "Facultad de Humanidades",
+		"funcion": "Marketing"			
+	},
+	{
+		"academicoId": "005",
+		"avatar": "/assets/images/avatars/avatar5.png",
+		"username": "akywalker",
+		"nombre": "Anakin",
+		"apellido": "Skywalker",
+		"area": "Frontend Developer",
+		"company": "Universidad Mayor",
+		"email": "akywalker@umayor.cl",
+		"emailpersonal": "akywalker@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Gestor",
+				"rolid": 2
+			},
+			{
+				"nombre": "Auditor",
+				"rolid": 3
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "FullTime",
+		"EscCarrNucl": "Facultad de Ciencias",
+		"funcion": "Artificial Intelligence"			
+	},
+	{
+		"academicoId": "006",
+		"avatar": "/assets/images/avatars/avatar4.png",
+		"username": "bsolo",
+		"nombre": "Ben",
+		"apellido": "Solo",
+		"area": "Backend Developer",
+		"company": "Universidad Mayor",
+		"email": "bsolo@umayor.cl",
+		"emailpersonal": "bsolo@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "Hibrid",
+		"EscCarrNucl": "Facultad de Artes",
+		"funcion": "Design"			
+	},
+	{
+		"academicoId": "007",
+		"avatar": "/assets/images/avatars/avatar1.png",
+		"username": "obi-wan",
+		"nombre": "Obi-Wan",
+		"apellido": "Kenobi",
+		"area": "UI/UX Designer",
+		"company": "Universidad Mayor",
+		"email": "obi-wan@umayor.cl",
+		"emailpersonal": "obi-wan@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "Hibrid",
+		"EscCarrNucl": "Facultad de Ciencias",
+		"funcion": "Infra Supervision"			
+	},
+	{
+		"academicoId": "008",
+		"avatar": "/assets/images/avatars/avatar2.png",
+		"username": "hsolo",
+		"nombre": "Han",
+		"apellido": "Solo",
+		"area": "Backend Developer",
+		"company": "Externo",
+		"email": "hsolo@umayor.cl",
+		"emailpersonal": "hsolo@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Auditor",
+				"rolid": 3
+			}
+		],
+		"status": true,
+		"typeDay": "FullTime",
+		"EscCarrNucl": "Facultad de Ciencias",
+		"funcion": "Infra Supervision"
+		
+	},
+	{
+		"academicoId": "009",
+		"avatar": "/assets/images/avatars/avatar5.png",
+		"username": "jutah",
+		"nombre": "Johnny",
+		"apellido": "Utah",
+		"area": "Full Stack Developer",
+		"company": "Universidad Mayor",
+		"email": "jutah@umayor.cl",
+		"emailpersonal": "jutah@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "PartTime",
+		"EscCarrNucl": "Facultad de Estudios Interdisciplinarios",
+		"funcion": "Software Development"			
+	},
+	{
+		"academicoId": "010",
+		"avatar": "/assets/images/avatars/avatar1.png",
+		"username": "btannen",
+		"nombre": "Biff Howard",
+		"apellido": "Tannen",
+		"area": "Frontend Developer",
+		"company": "Universidad Mayor",
+		"email": "btannen@umayor.cl",
+		"emailpersonal": "btannen@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Gestor",
+				"rolid": 2
+			},
+			{
+				"nombre": "Auditor",
+				"rolid": 3
+			}
+		],
+		"status": true,
+		"typeDay": "FullTime",
+		"EscCarrNucl": "Facultad de Humanidades",
+		"funcion": "Marketing"			
+	},
+	{
+		"academicoId": "011",
+		"avatar": "/assets/images/avatars/avatar3.png",
+		"username": "lorgana",
+		"nombre": "Leia",
+		"apellido": "Organa",
+		"area": "UI/UX Designer",
+		"company": "Universidad Mayor",
+		"email": "lorgana@umayor.cl",
+		"emailpersonal": "lorgana@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Gestor",
+				"rolid": 2
+			}
+		],
+		"status": true,
+		"typeDay": "Parttime",
+		"EscCarrNucl": "Facultad de Humanidades",
+		"funcion": "Artificial Intelligence"
+		
+	},
+	{
+		"academicoId": "012",
+		"avatar": "/assets/images/avatars/avatar8.png",
+		"username": "pamidala",
+		"nombre": "Padmé",
+		"apellido": "Amidala",
+		"area": "UI/UX Designer",
+		"company": "Externo",
+		"email": "pamidala@umayor.cl",
+		"emailpersonal": "pamidala@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "Parttime",
+		"EscCarrNucl": "Facultad de Humanidades",
+		"funcion": "Artificial Intelligence"			
+	},
+	{
+		"academicoId": "013",
+		"avatar": "/assets/images/avatars/avatar6.png",
+		"username": "luke",
+		"nombre": "Luke",
+		"apellido": "Skywalker",
+		"area": "Frontend Developer",
+		"company": "Universidad Mayor",
+		"email": "lskywalker@umayor.cl",
+		"emailpersonal": "lskywalker@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "Fullttime",
+		"EscCarrNucl": "Facultad de Humanidades",
+		"funcion": "Marketing"
+	},
+	{
+		"academicoId": "014",
+		"avatar": "/assets/images/avatars/avatar7.png",
+		"username": "rey",
+		"nombre": "Rey",
+		"apellido": "Skywalker",
+		"area": "Backend Developer",
+		"company": "Externo",
+		"email": "rskywalker@umayor.cl",
+		"emailpersonal": "rskywalker@gmail.com",
+		"rol": [
+			{
+				"nombre": "Academico",
+				"rolid": 1
+			},
+			{
+				"nombre": "Administrador",
+				"rolid": 4
+			}
+		],
+		"status": true,
+		"typeDay": "FullTime",
+		"EscCarrNucl": "Facultad de Humanidades",
+		"funcion": "Design"			
+	}
+]
+ 

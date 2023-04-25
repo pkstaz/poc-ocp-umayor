@@ -1,0 +1,142 @@
+<div class="chat-header clearfix">
+	<div class="row">
+		<div class="col-lg-7">
+			<a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
+				<img [src]="avatarDummyDirector" alt="avatar">
+			</a>
+			<div class="chat-about">
+				<h5> {{nombreDocente}} </h5>
+				<h6 class="m-0"><strong>Asunto:</strong>{{asunto}}</h6>
+				<!-- <span class="badge text-bg-primary">{{estado}}</span> -->
+			</div>
+		</div>
+		<div class="col-lg-5 hidden-sm text-end">
+			
+			<div class="button-card">
+				<a class="icon show" href="#" data-bs-toggle="dropdown" aria-expanded="true"><i
+						class="bi bi-three-dots-vertical foo-lg"></i></a>
+				<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow" data-popper-placement="top-end">
+					<li class="dropdown-header text-start">
+						<h6>Acciones</h6>
+					</li>
+					<li><a class="dropdown-item" (click)="archivarChatCabecera(idChatCab!)" >Archivar Conversación</a></li>
+					<li><a class="dropdown-item" >Otra Acción</a></li>
+				</ul>				
+
+				
+			</div>
+
+			<!-- <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+									<a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+									<a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+									<a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a> -->
+		</div>
+	</div>
+</div>
+<div class="chat-history">
+
+	<div class="message-data text-right">
+		<span class="message-data-time"></span>
+		<img [src]="avatarDummyDocente" alt="avatar">
+	</div>
+
+	<ul class="m-b-0">
+		<li class="clearfix" *ngFor="let item of dataBubles; let i = index">
+
+			<div *ngIf="item.autor === rutLeft" class="message my-message float-message-left">
+				<span class="message-data-time"> {{ item.MES }}, {{item.DIA}} de {{item.ANIO}} </span>
+				<p>{{ item.mensaje }}</p>
+			</div>
+
+			<div id="msg_{{ item.id_det }}" *ngIf="item.autor === rutRight" class="message other-message float-message-right">
+
+				<span class="message-data-time"> {{ item.MES }}, {{item.DIA}} de {{item.ANIO}}</span>
+				<div class="button-card">
+					<a class="icon show" href="#" data-bs-toggle="dropdown" aria-expanded="true"><i
+							class="bi bi-three-dots-vertical foo-lg"></i></a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow" data-popper-placement="top-end">
+						<li class="dropdown-header text-start">
+							<h6>Acciones</h6>
+						</li>
+						<li><a class="dropdown-item" (click)="deleteMessage(item)">
+								<i class="bi bi-trash-fill icon-dropdown"></i> Borrar</a></li>
+
+					</ul>
+				</div>
+				<p>
+					{{ item.mensaje }}
+				</p>
+				<!-- <div class="col-lg-5 hidden-sm text-end">
+					<div class="button-card">
+						<a class="icon show" href="#" data-bs-toggle="dropdown" aria-expanded="true"><i
+								class="bi bi-three-dots-vertical foo-lg"></i></a>
+						<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow" data-popper-placement="top-end">
+							<li class="dropdown-header text-start">
+								<h6>Acciones</h6>
+							</li>
+							<li><a class="dropdown-item" href="">Borrar</a></li>
+						</ul>
+					</div>
+				</div> -->
+
+
+			</div>
+
+
+
+
+			<!-- 	<ng-template #templateName>
+					<div class="message other-message float-message-right">
+						<span class="message-data-time"> {{ month }}, {{nameday}} {{day}} de {{year}} </span>
+						<p>{{ item.mensaje }} | {{item.autor}}</p>
+					</div>
+				</ng-template> -->
+
+
+
+			<!-- <div class="message my-message float-message-left">
+					<span class="message-data-time"> {{ month }}, {{nameday}} {{day}} de {{year}} </span>
+					<p>{{ item.mensaje }} | {{item.autor}}</p>
+				</div> -->
+			<!-- <div *ngIf="item.position === 'left'; else templateName" class="message my-message float-message-left">
+					<span class="message-data-time"> {{ month }}, {{nameday}} {{day}} de {{year}} </span>
+					<p>{{ item.message }} tiene la posicion left</p>
+				</div>
+				<ng-template #templateName>
+					<div class="message other-message float-message-right">
+						<span class="message-data-time">{{ item.date }}</span>
+						<p>{{ item.message }} tiene la posicion right</p>
+					</div>
+				</ng-template> -->
+		</li>
+	</ul>
+
+
+
+</div>
+<div class="chat-message clearfix">
+
+	<div *ngIf="loading" class="text-center py-3">
+		<div class="spinner-border" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+	<div class="input-group mb-3">
+		<input type="text" class="form-control custom-form-control" placeholder="Ingresa tu mensaje"
+			aria-label="Recipient's username" aria-describedby="button-addon2" [(ngModel)]="sendChat">
+
+		<button class="btn btn-secondary custom-btn-chat" type="button" id="button-addon2" (click)="sendmessage()">
+			<i class="bi bi-send"></i>
+		</button>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div class="bd-callout bd-callout-code">
+				<h4>Mensaje chat enviado string:</h4>
+				<pre>{{ sendChat | json }}</pre>
+			</div>
+		</div>
+	</div>
+</div>

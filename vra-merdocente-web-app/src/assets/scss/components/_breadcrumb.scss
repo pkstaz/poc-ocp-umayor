@@ -1,0 +1,24 @@
+/* Breadcrumbs */
+.breadcrumb {
+  @include opensans(.9rem, 400, $onyx);
+
+  a {
+    color: $onyx;
+    transition: 0.3s;
+
+    &:hover {
+      color: $mustard;
+    }
+  }
+
+  .breadcrumb-item {
+    &::before {
+      color: $onyx;
+    }
+
+    &.active {
+      color: $jet;
+      font-weight: 600;
+    }
+  }
+}

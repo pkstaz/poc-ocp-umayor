@@ -1,0 +1,77 @@
+/*
+* @Autor: cmunozm
+* @Área: Umayor Desarrollo
+* @Empresa: Universidad Mayor
+* @URL:
+* @version: 1.1
+**/
+/*
+ * @librarys vendors
+ * Bootstrap, aos, animate, ion-icons, font-awesome, themify icons.
+ **/
+
+//@import "~@ng-select/ng-select/themes/default.theme.css";
+// ... or 
+/* @import "~@ng-select/ng-select/themes/material.theme.css"; */
+
+
+//@import 'vendors/getbootstrap/bootstrap.scss';
+//@import 'vendors/aos/aos.scss';
+//@import 'vendors/animate/animate-scss.scss';
+//@import 'vendors/ionicons/docs/css/ionicons';
+//@import 'vendors/font-awesome-4.7.0/scss/font-awesome.scss';
+//@import 'vendors/themify-icons/themify-icons.scss';
+
+/*
+ * @Compenentes personalizados
+ *
+ * */
+@import 'base/normalize';
+@import 'helpers/mixins';
+@import 'base/colores';
+@import 'helpers/helps';
+@import 'base/fonts-google';
+//@import 'base/modal';
+@import 'helpers/whidth';
+@import 'components/spinner';
+@import 'components/custom-buttons';
+@import 'components/titles';
+//@import 'components/cards';
+@import 'components/card-custom';
+@import 'components/chats';
+@import 'components/contact-list';
+@import 'components/list-jobs';
+@import 'components/search-list';
+@import 'components/profile-setting';
+@import 'components/calendar';
+@import 'components/callout';
+//@import 'components/list-asignaturas';
+//@import 'components/owl';
+//@import 'components/alertas';
+//@import 'components/accordeon';
+@import 'components/custom-forms';
+@import 'components/profile';
+//@import 'components/breadcrumb';
+@import 'base/icons';
+@import 'components/tables';
+//@import 'components/badges';
+//@import 'components/dragAndDrop';
+//@import 'components/caption-hover';
+//@import 'components/overlay';
+//@import 'components/wizard';
+//@import 'components/timeline';
+//@import 'components/modulos';
+@import 'pages/global';
+
+
+/*
+ * @css inicio proyecto
+ * Adjuntar archivos scss del proyecto customizado
+ **/
+
+@import 'layout/header';
+@import 'pages/footer';
+@import 'components/breadcrumb';
+@import 'layout/sidebar';
+@import 'pages/dashboard';
+@import 'pages/404';

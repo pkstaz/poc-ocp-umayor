@@ -1,0 +1,220 @@
+/*
+ * @custom colors redes sociales
+ **/
+
+$facebook: rgb(59, 89, 152);
+$twitter: rgb(85, 172, 238);
+$linkedin: rgb(0, 123, 181);
+$google-mas: rgb(221, 75, 57);
+$youtube: rgb(187, 0, 0);
+$whatsapp: rgb(77, 194, 71);
+
+/*
+ * @variables alertas
+ **/
+
+$ok: #3c763d;
+$bg_ok: #dff0d8;
+$border_ok: #d6e9c6;
+$link_ok: #2b542c;
+
+$info: #31708f;
+$bg_info: #d9edf7;
+$border_info: #bce8f1;
+$link_info: #245269;
+
+$warning: #8a6d3b;
+$bg_warning: #fff3cd;
+$border_warning: #ffeeba;
+$link_warning: #66512c;
+
+$danger-text: #842029;
+$bg_danger: #f8d7da;
+$border_danger: #f5c2c7;
+$link_danger: #843534;
+
+
+/* custom color alertas */
+$notice: #006878;
+$bg_notice: #EFFBFC;
+$border_notice: #80B3BB;
+$link_notice: #006878;
+
+
+$ads: #feda3f;
+$bg_ads: #FFF3C2;
+$border_ads: #feda3f;
+$link_ads: #feda3f;
+
+
+/*
+ * @custom colors alert
+ *
+ **/
+
+$color_info: #00cae3;
+$color_info_light: #e1f5fe;
+$color_info_dark: #004085;
+
+$color_success: #55b559;
+$color_success_light: #d4edda;
+$color_succes_dark: #155724;
+
+$color_warning: #ff9e0f;
+$color_warning_light: #fff3cd;
+$color_warning_dark: #856404;
+
+$color_warning-2: #ff5722;
+$color_warning-2_light: #ffe5dc;
+$color_warning-2_dark: #982400;
+
+$color_danger: #f55145;
+$color_danger_light: #f8d7da;
+$color_danger_dark: #721c24;
+
+$color_dark: #2a3f5a;
+$color_light: #e5eaef;
+
+
+$red: #d51000;
+$cyan: #d51000;
+$success: #55b559; // $success-dark: #398439;
+$danger: #f55145; // $danger-darck: #ac2925;
+$info: #00cae3; // $info-darck: #46b8da;
+$warning: #ff9e0f; // $warning-dark: #985f0d;
+
+
+
+$hover-success: #28a745; // $success-dark: #398439;#1e7e34
+$hover-danger: #dc3545; // $danger-darck: #ac2925;
+$hover-info: #17a2b8; // $info-darck: #46b8da;
+$hover-warning: #ffc107; // $warning-dark: #985f0d;
+
+/* custom color alertas */
+$notice-hover: #EFFBFC;
+$ads-hover: #feda3f;
+
+$border-hover-success: #28a745; // $success-dark: #398439;
+$border-hover-danger: #dc3545; // $danger-darck: #ac2925;
+$border-hover-info: #17a2b8; // $info-darck: #46b8da;
+$border-hover-warning: #ffc107; // $warning-dark: #985f0d;
+
+/* custom color alertas */
+$notice-border: #80B3BB;
+$ads-border: #feda3f;
+
+/* custom color alertas */
+$notice-text: #006878;
+$ads-text: #feda3f;
+$color_text_warning: #664d03;
+
+
+// Social Colors
+///////////////////
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #FF0000;
+$google-plus: #db4439;
+$linkedin: #007bb6;
+$instagram: #c32aa3;
+$pinterest: #bd081c;
+$google: #4285f4;
+$snapchat: #fffc00;
+$whatsapp: #25d366;
+$tumblr: #35465d;
+$reddit: #ff4500;
+$spotify: #1ed760;
+$yahoo: #430297;
+$dribbble: #ea4c89;
+$skype: #00aff0;
+$quora: #aa2200;
+$riverBed: #4C585C;
+$vimeo: #1ab7ea;
+
+$blue : #5e72e4;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink : #e83e8c !default;
+$red : #EE3232;
+$orange: #fd7e14 !default;
+$yellow: #FFFA6F;
+$green : #297F00;
+$teal : #20c997 !default;
+$cyan : #3065D0;
+$primary : #593bdb !default;
+$secondary: #673BB7 !default;
+$success : #7ED321 !default;
+$info : #50E3C2 !default;
+$warning : #FFAA16 !default;
+$danger : #FF1616 !default;
+$light : #f8f9fa !default;
+$dark : #454545;
+
+/*
+ * @Colores proyecto
+ **/
+
+$green: #006878;
+$yellow: #feda3f;
+$naranjo: #ea7a03;
+$color-text: #444;
+$color-title: #000;
+$color-bgdark: #4e4e4e;
+
+$color-link: #006878;
+$color-link-hover: #777;
+
+
+$gray-dark: #0a0909;
+$gray--dark: #737277;
+$gray-light: #87868a;
+$gray--light: #eeeeee;
+$gray---light: #e6e6e6;
+
+
+/* SCSS HEX */
+$ming: #006878;
+$mustard: #feda3f;
+$cadmium-orange: #ea7a03;
+$onyx: #444444;
+$jet: #333333;
+$davys-grey: #4e4e4e;
+$black: #000000;
+$cultured: #eeeeee;
+$platinum: #e6e6e6;
+$sonic-silver: #737277;
+$taupe-gray: #87868a;
+$platinum: #e6e6e6;
+
+
+
+/* SCSS HSL */
+$ming: hsla(188, 100%, 24%, 1);
+$mustard: hsla(49, 99%, 62%, 1);
+$cadmium-orange: hsla(31, 97%, 46%, 1);
+$onyx: hsla(0, 0%, 27%, 1);
+$davys-grey: hsla(0, 0%, 31%, 1);
+$black: hsla(0, 0%, 0%, 1);
+$cultured: hsla(0, 0%, 93%, 1);
+$platinum: hsla(0, 0%, 90%, 1);
+
+/* SCSS RGB */
+$ming: rgba(0, 104, 120, 1);
+$mustard: rgba(254, 218, 63, 1);
+$cadmium-orange: rgba(234, 122, 3, 1);
+$onyx: rgba(68, 68, 68, 1);
+$davys-grey: rgba(78, 78, 78, 1);
+$black: rgba(0, 0, 0, 1);
+$cultured: rgba(238, 238, 238, 1);
+$platinum: rgba(230, 230, 230, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);
+$gradient-right: linear-gradient(90deg, #006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);
+$gradient-bottom: linear-gradient(180deg, #006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);
+$gradient-left: linear-gradient(270deg, #006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);
+$gradient-top-right: linear-gradient(45deg, #006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);
+$gradient-bottom-right: linear-gradient(135deg, #006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);
+$gradient-top-left: linear-gradient(225deg, #006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);
+$gradient-bottom-left: linear-gradient(315deg, #006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);
+$gradient-radial: radial-gradient(#006878ff, #feda3fff, #ea7a03ff, #444444ff, #4e4e4eff, #000000ff, #eeeeeeff, #e6e6e6ff);

@@ -1,0 +1,322 @@
+@mixin size-btn($py:.5rem, $px:1.6rem) {
+  padding: $py $px;
+  line-height: normal;
+}
+
+@mixin transicionBtn() {
+  transition: all .2s ease-in-out;
+}
+
+/* Reset btn bootstrap */
+.btn,
+.btn:link,
+.btn:focus,
+.btn:visited {
+  outline: none;
+}
+
+/*
+ * @variables
+ * 
+ **/
+$mustard: #feda3fff;
+$cadmium-orange: #ea7a03ff;
+$jet: #434040ff;
+$ming: #006878ff;
+$jet-2: #333333ff;
+$onyx: #444444;
+$sonic-silver: #737277ff;
+$taupe-gray: #87868aff;
+$cultured: #eeeeeeff;
+$platinum: #e6e6e6ff;
+
+
+
+$name-btn: 'umayor';
+$font-buttons: 'opensans',
+sans-serif;
+$font-size: .875rem;
+$font-dark: $onyx;
+$font-white: #ffffff;
+$font-weight: 400;
+$line-height: 100%;
+$primary-color: $mustard;
+$secondary-color: $cadmium-orange;
+$tertiary-color: $ming;
+/* 0.313 */
+
+.btn-border {
+  border-radius: .25rem;
+  box-sizing: border-box;
+  border-width: 2px;
+  background-color: transparent;
+  display: inline-block;
+  font-family: $font-buttons, sans-serif;
+  font-size: $font-size;
+  color: $color-font-white;
+  font-weight: $font-weight;
+  transition: all .2s ease-in-out;
+  padding: 0.375rem 1rem;
+  line-height: 2;
+
+  @media (max-width: 640px) {
+    display: block;
+  }
+
+
+  &.#{$name-btn}-primary {
+    border-color: $primary-color;
+    color: $font-dark;
+
+    &:hover,
+    &:focus {
+      text-decoration: none !important;
+      background-color: $primary-color;
+      color: $font-white !important;
+      border-color: $primary-color;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem $primary-color;
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus {
+      text-decoration: none;
+      color: $primary-color;
+      background-color: transparent;
+      border-color: $primary-color;
+    }
+  }
+
+  &.#{$name-btn}-secundary {
+    border-color: $secondary-color;
+    color: $secondary-color;
+
+    &:hover,
+    &:focus {
+      text-decoration: none !important;
+      background-color: $secondary-color;
+      color: $font-white !important;
+      border-color: $secondary-color;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem $secondary-color;
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus {
+      color: $secondary-color;
+      background-color: transparent;
+      border-color: $secondary-color;
+    }
+  }
+}
+
+.btn-full {
+  border-radius: .25rem;
+  box-sizing: border-box;
+  border-width: 2px;
+  background-color: transparent;
+  display: inline-block;
+  font-family: $font-buttons, sans-serif;
+  font-size: $font-size;
+  color: $color-font-white;
+  font-weight: $font-weight;
+  transition: all .2s ease-in-out;
+  padding: 0.375rem 1rem;
+  line-height: 2;
+
+  @media (max-width: 640px) {
+    display: block;
+  }
+
+  &.#{$name-btn}-primary {
+    border-color: $primary-color;
+    color: $font-dark;
+    background-color: $primary-color;
+    text-decoration: none !important;
+    border-width: 2px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: transparent;
+      color: $primary-color !important;
+      border-color: $primary-color;
+      border-width: 2px;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem $primary-color;
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus {
+      text-decoration: none;
+      color: $font-white;
+      background-color: transparent;
+      border-color: $primary-color;
+    }
+  }
+
+  &.#{$name-btn}-secundary {
+    border-color: $secondary-color;
+    color: $font-white !important;
+    background-color: $secondary-color;
+    text-decoration: none !important;
+    border-width: 2px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: transparent;
+      color: $secondary-color !important;
+      border-color: $secondary-color;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem $secondary-color;
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus {
+      text-decoration: none;
+      color: $secondary-color;
+      background-color: transparent;
+      border-color: $secondary-color;
+    }
+  }
+}
+
+.btn-getstarted {
+  padding: 8px 20px !important;
+  border-radius: 50px !important;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+  line-height: 1.5rem !important;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: $font-buttons;
+  font-size: $font-size;
+  color: $font-white;
+  @include transicionBtn();
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+
+  &.#{$name-btn}-primary {
+    border-color: $primary-color;
+    color: $font-dark;
+    background-color: $primary-color;
+    text-decoration: none !important;
+    border-width: 2px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: transparent;
+      color: $primary-color !important;
+      border-color: $primary-color;
+      border-width: 2px;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem $primary-color;
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus {
+      text-decoration: none;
+      color: $font-white;
+      background-color: transparent;
+      border-color: $primary-color;
+    }
+  }
+
+  &.#{$name-btn}-secundary {
+    border-color: $secondary-color;
+    color: $font-white !important;
+    background-color: $secondary-color;
+    text-decoration: none !important;
+    border-width: 2px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: transparent;
+      color: $secondary-color !important;
+      border-color: $secondary-color;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem $secondary-color;
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus {
+      text-decoration: none;
+      color: $secondary-color;
+      background-color: transparent;
+      border-color: $secondary-color;
+    }
+  }
+
+  &.#{$name-btn}-tertiary {
+    border-color: $tertiary-color;
+    color: $font-white !important;
+    background-color: $tertiary-color;
+    text-decoration: none !important;
+    border-width: 2px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: transparent;
+      color: $font-white !important;
+      border-color: $tertiary-color;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem $tertiary-color
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus {
+      text-decoration: none;
+      color: $font-white;
+      background-color: transparent;
+      border-color: $tertiary-color;
+    }
+  }
+}
+
+.button-contact {
+  position: fixed;
+  z-index: 999;
+  background-color: #4e4e4e;
+  padding: .5rem 1rem;
+  right: 0;
+  top: 50%;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  @include transicion;
+
+  &:visited,
+  &:link,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $mustard;
+    color: $jet;
+  }
+}
+

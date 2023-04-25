@@ -1,0 +1,88 @@
+.hori-timeline {
+
+  margin: 2rem 0 2rem 0;
+  display: inline-block;
+  width: 100%;
+
+  .list-inline {
+    margin: 0;
+
+    &.events {
+      border-top: 3px solid #e9ecef;
+      text-align: center;
+
+      .event-list {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding-top: 60px;
+        margin-right: 0;
+        vertical-align: top;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 52px;
+          width: 2px;
+          top: 0;
+          left: 50%;
+          background-color: #dee2e6;
+          display: inline-block;
+          margin: 0 auto;
+        }
+
+        .event-date {
+          @include opensans(.875rem, 400, #fff);
+          position: absolute;
+          top: -12px;
+          left: 0;
+          right: 0;
+          display: block;
+          padding: 0.313rem 0.25rem;
+          width: 50%;
+          margin: 0 auto;
+          border-radius: 0.25rem;
+        }
+
+        h5 {
+          @include opensans(1rem, 400, #bebebe);
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (min-width: 1140px) {
+  .hori-timeline .events .event-list {
+    display: inline-block;
+    width: 24%;
+    padding-top: 45px;
+  }
+
+  .hori-timeline .events .event-list .event-date {
+    top: -12px;
+    color: #fff;
+  }
+}
+
+.bg-soft-primary {
+  background-color: rgba(64, 144, 203, 1) !important;
+}
+
+.bg-soft-success {
+  background-color: rgba(71, 189, 154, 1) !important;
+}
+
+.bg-soft-danger {
+  background-color: rgba(231, 76, 94, 1) !important;
+}
+
+.bg-soft-warning {
+  background-color: rgba(249, 213, 112, 1) !important;
+}

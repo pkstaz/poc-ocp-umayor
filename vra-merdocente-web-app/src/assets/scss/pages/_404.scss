@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+# Error 404
+--------------------------------------------------------------*/
+.error-404 {
+  padding: 30px;
+
+  h1 {
+    @include opensans(11.25rem, 700, $onyx);
+    margin-bottom: 0;
+    line-height: 150px;
+  }
+
+  h2 {
+    @include opensans(1.5rem, 700, $onyx);
+    margin-bottom: 30px;
+  }
+}
+
+.credits {
+  @include opensans(.9rem,300, $onyx);
+	margin: 1rem 0 0 0;
+}

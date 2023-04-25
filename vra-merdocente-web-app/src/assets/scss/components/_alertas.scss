@@ -1,0 +1,200 @@
+/* colores */
+.alerta {
+  padding: .75rem 1.25rem;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: block;
+
+  p {
+    padding: 0;
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+    font-size: .75rem;
+  }
+
+  .icon-alerta {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 .625rem 0 0;
+  }
+
+  &.alerta-ok {
+    color: $ok;
+    background-color: $bg_ok;
+    border-color: $border_ok;
+
+    .alert-link {
+      color: $link_ok;
+    }
+
+    .close {
+      color: $ok;
+      text-decoration: none;
+      float: right;
+
+      &:hover {
+        color: $link_ok;
+      }
+    }
+
+    .icon-alerta {
+      color: $ok;
+    }
+  }
+
+  &.alerta-info {
+    color: $info;
+    background-color: $bg_info;
+    border-color: $border_info;
+
+    .alert-link {
+      color: $link_info;
+    }
+
+    .close {
+      color: $info;
+      text-decoration: none;
+      float: right;
+
+      &:hover {
+        color: $link_info;
+      }
+    }
+
+    .icon-alerta {
+      color: $info;
+    }
+  }
+
+  &.alerta-warning {
+    color: $color_text_warning;
+    background-color: $bg_warning;
+    border-color: $border_warning;
+
+    .alert-link {
+      color: $link_warning;
+    }
+
+    .close {
+      color: $warning;
+      text-decoration: none;
+      float: right;
+
+      &:hover {
+        color: $link_warning;
+      }
+    }
+
+    .icon-alerta {
+      color: $warning;
+    }
+  }
+
+  &.alerta-danger {
+    color: $danger;
+    background-color: $bg_danger;
+    border-color: $border_danger;
+
+    .alert-link {
+      color: $link_danger;
+    }
+
+    .close {
+      color: $danger;
+      text-decoration: none;
+      float: right;
+
+      &:hover {
+        color: $link_danger;
+      }
+    }
+
+    .icon-alerta {
+      color: $danger;
+    }
+  }
+
+  /*custom */
+  &.alerta-notice {
+    color: $notice;
+    background-color: $bg_notice;
+    border: .063rem dashed $border_notice;
+
+    .alert-link {
+      color: $link_notice;
+    }
+
+    .close {
+      color: $notice;
+      text-decoration: none;
+      float: right;
+
+      &:hover {
+        color: $link_notice;
+      }
+    }
+
+    .icon-alerta {
+      color: $notice;
+    }
+  }
+
+  &.alerta-ads {
+    color: #444;
+    background-color: $bg_ads;
+    border: .063rem dashed $ads;
+
+    .alert-link {
+      color: #444;
+    }
+
+    .close {
+      color: #FFD316;
+      text-decoration: none;
+      float: right;
+
+      &:hover {
+        color: #444;
+      }
+    }
+
+    .icon-alerta {
+      color: #FFD316;
+    }
+  }
+
+}
+
+.padd-y {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padd-x {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padd-xy {
+  padding: 1rem;
+}
+
+.show-alert {
+  display: block;
+}
+
+.hidden-alert {
+  display: none;
+}
+
+.costum-tooltip{
+color: #856404 !important;
+background-color: #fff3cd;
+border-color: #ffeeba;
+font-size: .75rem;
+text-align: center;
+}
+

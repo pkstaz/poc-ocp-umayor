@@ -1,0 +1,18 @@
+#wrapp-asignaturas {
+	
+  &.wrapp-asignaturas {
+    margin: 1rem 0;
+    .list {
+      margin: 0;
+      padding: 0; 
+      .box-list {
+        margin-bottom: 2rem;
+        border: 1px solid #dee2e6;
+        border-radius: .3rem;
+        .body {
+          padding: 4rem;
+        }
+      }
+    }
+  }
+}

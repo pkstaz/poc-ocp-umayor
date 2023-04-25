@@ -1,0 +1,70 @@
+.wrapp-header-page {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 1rem 0 0 0;
+
+  .title {
+    @include opensans(2rem, 300, $color-text);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    .featured-text {
+      color: $green;
+    }
+  }
+}
+
+
+
+
+
+.step-heading {
+  height: 33px;
+  padding-bottom: 50px;
+  cursor: pointer;
+
+  .link-step {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    @include opensans(1.2rem, 500, $green);
+    line-height: normal;
+
+    &:hover {
+      color: $color-text;
+      text-decoration: underline;
+    }
+  }
+
+  .num {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.step:last-child .step-heading {
+  padding-bottom: 0;
+}
+
+.step-heading>a:hover {
+  text-decoration: none;
+}
+
+
+
+.steps .step .line {
+  border-left: 1px solid $green;
+  left: 16px;
+  bottom: 0px;
+  top: 33px;
+}
+
+.bg-wizard-number {
+  background-color: $green;
+}
+
+.step-body {
+  background-color: rgb(0 0 0 / 2%);
+}

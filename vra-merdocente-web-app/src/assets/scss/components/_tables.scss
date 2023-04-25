@@ -1,0 +1,66 @@
+#asignatures-academic,
+#academic-search,
+#academic-calendar {
+  background-color: #fff;
+
+  thead {
+    tr {
+      th {
+        font-size: .9rem;
+        vertical-align: middle;
+        white-space: normal;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+
+      td,
+      th {
+        margin: 0;
+        font-size: .9rem;
+        vertical-align: middle;
+        padding: 0.625rem;
+        text-transform: capitalize;
+        white-space: normal;
+      }
+    }
+  }
+
+  tfoot {}
+}
+
+#buscadorTabla {
+  background-color: rgba(0, 0, 0, .04);
+  border: 1px solid rgba(0, 0, 0, .08);
+  margin-top: 1rem;
+}
+
+
+#academic-search_wrapper,
+#academic-report_wrapper {
+
+
+  .dataTables_length {
+    padding: 1rem 0;
+  }
+
+  .dataTables_filter {
+    padding: 1rem 0;
+    text-align: right;
+
+		label {
+			text-align: left;
+		}
+  }
+
+  .dataTables_info {
+    padding: 1rem 0;
+    line-height: 37.8px;
+  }
+
+  .dataTables_paginate {
+    padding: 1rem 0;
+  }
+}

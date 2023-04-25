@@ -1,0 +1,24 @@
+$accepted: #00b74a;
+$process: #ffa900;
+$rejected: #f93154;
+$stopped: #ea7a03;
+
+.badge {
+    @include opensans(.75rem, 400, #fff);
+
+    &.accepted {
+        background-color: $accepted;
+    }
+
+    &.process {
+        background-color: $process;
+    }
+
+    &.rejected {
+        background-color: $rejected;
+    }
+
+    &.stopped {
+        background-color: $stopped;
+    }
+}

@@ -1,0 +1,81 @@
+<div class="bg-login">
+
+
+
+	<section id="wrapp-login">
+		<div class="center-login">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="wrapp-brand-login">
+							<img class="logo-login" src="./assets/images/logo-umayor-login.png" alt="" title="Universidad Mayor">
+						</div>
+					</div>
+					<div class="col-12 text-center">
+						<div class="login animate__animated animate__fadeIn animate__delay-800s">
+
+							<form class="formulario">
+								<div class="card card-login">
+									<div class="card-header login-header">
+										<h3 class="title">Bienvenid@s</h3>
+										<p class="subtitle">a Mercado Docente</p>
+									</div>
+									<div class="card-body login-body">
+										<div class="row wrapp-custom-input">
+											<div class="col-12">
+												Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores odit beatae officia
+												numquam, minus error possimus sequi eveniet nemo. Iste.
+											</div>
+										</div>
+									</div>
+									<div class="card-footer login-footer">
+										<div class="row">
+											<div class="col-12">
+
+												<!-- <button type="submit" [disabled]="isChecking" class="btn btn-full-custom verde btn-block"> -->
+												<button type="button" (click)="loginRedirect()" class="btn btn-full-custom verde btn-block">
+													 
+														<span *ngIf="isChecking" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+														<span class="text-spinner-button">Ingresar loginRedirect</span>
+													 
+												</button>
+
+
+												<button type="button" (click)="loginPopup()" class="btn btn-full-custom verde my-3 btn-block">
+												
+													<span *ngIf="isChecking" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+													<span class="text-spinner-button">Ingresar loginPopup</span>
+												
+												</button>
+
+
+													<button type="button" (click)="logout()" class="btn btn-full-custom verde my-3 btn-block">
+													
+														<span *ngIf="isChecking" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+														<span class="text-spinner-button">Logout</span>
+													
+													</button>
+
+											</div>
+											<div class="col-12">
+
+												<div class="wrapp-link">
+													<a href="https://passwordreset.microsoftonline.com/" class="text-link">¿Haz olvidado tu
+														contraseña?</a>
+												</div>
+												<!-- <span class="messeage">Comunicate con el servicio de atención al +56 xxxxxxx.</span> -->
+											</div>
+											<!-- <br />
+                        Is Authenticated: {{ isAuthenticated }}
+                        <pre>{{ userData$ | async }}</pre> -->
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

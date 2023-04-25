@@ -1,0 +1,42 @@
+.owl-carousel {
+        .owl-nav {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+
+            .owl-prev, .owl-next {
+                position: absolute;
+                height: 100px;
+                color: inherit;
+                background: none;
+                border: none;
+                z-index: 100;
+
+                i {
+                    font-size: 3rem;
+                    color: #444;
+                }
+            }
+
+            .owl-prev {
+				left: 0;
+				&:hover {
+					background: transparent !important;
+				}
+				&:focus {
+					outline: none;
+				}
+            }
+
+            .owl-next {
+				right: 0;
+				&:hover {
+					background: transparent !important;
+				}
+				&:focus {
+					outline: none;
+				}
+            }
+        }
+    }

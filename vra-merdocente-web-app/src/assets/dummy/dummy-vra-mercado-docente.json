@@ -1,0 +1,462 @@
+{
+	"projectName": "VRA Mercado Docente",
+	"companyProject": "Universidad Mayor",
+	"dateProject": 2022,
+	"active": true,
+	"users": [
+		{
+			"academicoId": "001",
+			"avatar": "/assets/images/avatars/avatar9.png",
+			"username": "marty",
+			"nombre": "Marty Seamus",
+			"apellido": "McFly",
+			"area": "Full Stack Developer",
+			"company": "Universidad Mayor",
+			"email": "mmcfly@umayor.cl",
+			"emailpersonal": "mmcfly@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@MmcFly",
+			"facebook": "mcfly",
+			"linked": "linkedin.com/in/mcfly",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				},
+				{
+					"nombre": "Gestor",
+					"rolid": 2
+				}
+			],
+			"status": true,
+			"typeDay": "FullTime",
+			"EscCarrNucl":"Facultad de Ciencias",
+			"funcion": "Design"			
+		},
+		{
+			"academicoId": "002",
+			"avatar": "/assets/images/avatars/avatar8.png",
+			"username": "lorraine",
+			"nombre": "Lorraine",
+			"apellido": "McFly",
+			"area": "Frontend Developer",
+			"company": "Universidad Mayor",
+			"email": "lmcfly@umayor.cl",
+			"emailpersonal": "lmcfly@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@LmcFly",
+			"facebook": "lmcfly",
+			"linked": "linkedin.com/in/lmcfly",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				},
+				{
+					"nombre": "Gestor",
+					"rolid": 2
+				}
+			],
+			"status": true,
+			"typeDay": "FullTime",
+			"EscCarrNucl": "Facultad de Estudios Interdisciplinarios",
+			"funcion": "Design"			
+		},
+		{
+			"academicoId": "003",
+			"avatar": "/assets/images/avatars/avatar4.png",
+			"username": "George",
+			"nombre": "George Douglas",
+			"apellido": "McFly",
+			"area": "UI/UX Designer",
+			"company": "Externo",
+			"email": "gmcfly@umayor.cl",
+			"emailpersonal": "gmcfly@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@GmcFly",
+			"facebook": "gmcfly",
+			"linked": "linkedin.com/in/Gmcfly",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Gestor",
+					"rolid": 2
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "FullTime",
+			"EscCarrNucl": "Facultad de Artes",
+			"funcion": "Software Development"			
+		},
+		{
+			"academicoId": "004",
+			"avatar": "/assets/images/avatars/avatar1.png",
+			"username": "Brown",
+			"nombre": "Dr. Emmett Lathrop",
+			"apellido": "Brown",
+			"area": "Backend Developer",
+			"company": "Universidad Mayor",
+			"email": "ebrown@umayor.cl",
+			"emailpersonal": "ebrown@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Brown",
+			"facebook": "brown",
+			"linked": "linkedin.com/in/brown",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Gestor",
+					"rolid": 2
+				},
+				{
+					"nombre": "Auditor",
+					"rolid": 3
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "PartTime",
+			"EscCarrNucl": "Facultad de Humanidades",
+			"funcion": "Marketing"			
+		},
+		{
+			"academicoId": "005",
+			"avatar": "/assets/images/avatars/avatar5.png",
+			"username": "askywalker",
+			"nombre": "Anakin",
+			"apellido": "Skywalker",
+			"area": "Frontend Developer",
+			"company": "Universidad Mayor",
+			"email": "askywalker@umayor.cl",
+			"emailpersonal": "askywalker@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Askywalker",
+			"facebook": "askywalker",
+			"linked": "linkedin.com/in/askywalker",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Gestor",
+					"rolid": 2
+				},
+				{
+					"nombre": "Auditor",
+					"rolid": 3
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "FullTime",
+			"EscCarrNucl": "Facultad de Ciencias",
+			"funcion": "Artificial Intelligence"			
+		},
+		{
+			"academicoId": "006",
+			"avatar": "/assets/images/avatars/avatar4.png",
+			"username": "bsolo",
+			"nombre": "Ben",
+			"apellido": "Solo",
+			"area": "Backend Developer",
+			"company": "Universidad Mayor",
+			"email": "bsolo@umayor.cl",
+			"emailpersonal": "bsolo@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Bsolo",
+			"facebook": "bsolo",
+			"linked": "linkedin.com/in/bsolo",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "Hibrid",
+			"EscCarrNucl": "Facultad de Artes",
+			"funcion": "Design"			
+		},
+		{
+			"academicoId": "007",
+			"avatar": "/assets/images/avatars/avatar1.png",
+			"username": "obi-wan",
+			"nombre": "Obi-Wan",
+			"apellido": "Kenobi",
+			"area": "UI/UX Designer",
+			"company": "Universidad Mayor",
+			"email": "obi-wan@umayor.cl",
+			"emailpersonal": "obi-wan@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Obi-wan",
+			"facebook": "obi-wan",
+			"linked": "linkedin.com/in/obi-wan",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "Hibrid",
+			"EscCarrNucl": "Facultad de Ciencias",
+			"funcion": "Infra Supervision"			
+		},
+		{
+			"academicoId": "008",
+			"avatar": "/assets/images/avatars/avatar2.png",
+			"username": "hsolo",
+			"nombre": "Han",
+			"apellido": "Solo",
+			"area": "Backend Developer",
+			"company": "Externo",
+			"email": "hsolo@umayor.cl",
+			"emailpersonal": "hsolo@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Hsolo",
+			"facebook": "hsolo",
+			"linked": "linkedin.com/in/hsolo",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Auditor",
+					"rolid": 3
+				}
+			],
+			"status": true,
+			"typeDay": "FullTime",
+			"EscCarrNucl": "Facultad de Ciencias",
+			"funcion": "Infra Supervision"
+			
+		},
+		{
+			"academicoId": "009",
+			"avatar": "/assets/images/avatars/avatar5.png",
+			"username": "jutah",
+			"nombre": "Johnny",
+			"apellido": "Utah",
+			"area": "Full Stack Developer",
+			"company": "Universidad Mayor",
+			"email": "jutah@umayor.cl",
+			"emailpersonal": "jutah@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Jutah",
+			"facebook": "jutah",
+			"linked": "linkedin.com/in/jutah",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "PartTime",
+			"EscCarrNucl": "Facultad de Estudios Interdisciplinarios",
+			"funcion": "Software Development"			
+		},
+		{
+			"academicoId": "010",
+			"avatar": "/assets/images/avatars/avatar1.png",
+			"username": "btannen",
+			"nombre": "Biff Howard",
+			"apellido": "Tannen",
+			"area": "Frontend Developer",
+			"company": "Universidad Mayor",
+			"email": "btannen@umayor.cl",
+			"emailpersonal": "btannen@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Btannen",
+			"facebook": "btannen",
+			"linked": "linkedin.com/in/btannen",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Gestor",
+					"rolid": 2
+				},
+				{
+					"nombre": "Auditor",
+					"rolid": 3
+				}
+			],
+			"status": true,
+			"typeDay": "FullTime",
+			"EscCarrNucl": "Facultad de Humanidades",
+			"funcion": "Marketing"			
+		},
+		{
+			"academicoId": "011",
+			"avatar": "/assets/images/avatars/avatar3.png",
+			"username": "lorgana",
+			"nombre": "Leia",
+			"apellido": "Organa",
+			"area": "UI/UX Designer",
+			"company": "Universidad Mayor",
+			"email": "lorgana@umayor.cl",
+			"emailpersonal": "lorgana@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Lorgana",
+			"facebook": "blorgana",
+			"linked": "linkedin.com/in/lorgana",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Gestor",
+					"rolid": 2
+				}
+			],
+			"status": true,
+			"typeDay": "Parttime",
+			"EscCarrNucl": "Facultad de Humanidades",
+			"funcion": "Artificial Intelligence"
+			
+		},
+		{
+			"academicoId": "012",
+			"avatar": "/assets/images/avatars/avatar8.png",
+			"username": "pamidala",
+			"nombre": "Padmé",
+			"apellido": "Amidala",
+			"area": "UI/UX Designer",
+			"company": "Externo",
+			"email": "pamidala@umayor.cl",
+			"emailpersonal": "pamidala@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Pamidala",
+			"facebook": "pamidala",
+			"linked": "linkedin.com/in/pamidala",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "Parttime",
+			"EscCarrNucl": "Facultad de Humanidades",
+			"funcion": "Artificial Intelligence"			
+		},
+		{
+			"academicoId": "013",
+			"avatar": "/assets/images/avatars/avatar6.png",
+			"username": "luke",
+			"nombre": "Luke",
+			"apellido": "Skywalker",
+			"area": "Frontend Developer",
+			"company": "Universidad Mayor",
+			"email": "lskywalker@umayor.cl",
+			"emailpersonal": "lskywalker@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Lskywalker",
+			"facebook": "Lskywalker",
+			"linked": "linkedin.com/in/Lskywalker",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "Fullttime",
+			"EscCarrNucl": "Facultad de Humanidades",
+			"funcion": "Marketing"
+		},
+		{
+			"academicoId": "014",
+			"avatar": "/assets/images/avatars/avatar7.png",
+			"username": "rey",
+			"nombre": "Rey",
+			"apellido": "Skywalker",
+			"area": "Backend Developer",
+			"company": "Externo",
+			"email": "rskywalker@umayor.cl",
+			"emailpersonal": "rskywalker@gmail.com",
+			"telefono": "+569912345678",
+			"sumary":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.",
+			"twitter": "@Rskywalker",
+			"facebook": "rskywalker",
+			"linked": "linkedin.com/in/rskywalker",
+			"rol": [
+				{
+					"nombre": "Academico",
+					"rolid": 1
+				},
+				{
+					"nombre": "Administrador",
+					"rolid": 4
+				}
+			],
+			"status": true,
+			"typeDay": "FullTime",
+			"EscCarrNucl": "Facultad de Humanidades",
+			"funcion": "Design"			
+		}
+	]
+}

@@ -1,0 +1,124 @@
+<section class="section">
+	<div class="row clearfix">
+		<div class="col-lg-12">
+
+			<div class="card shadow-sm chat-app">
+				<div class="d-flex justify-content-between">
+					<div id="plist" class="people-list">
+
+					<div class="wrapp-header">
+					<h4 class="title">Tus mensajes</h4>
+					<div class="input-group flex-nowrap">
+					<span class="input-group-text"><i class="bi bi-search"></i></span>
+					<input type="text" class="form-control" placeholder="Search...">
+					</div>
+					</div>
+
+
+
+					<ul class="nav nav-tabs list-unstyled chat-list">
+						<li 
+						*ngFor="let item of userChatCab; let i = index" 
+						class="clearfix" 
+						data-bs-toggle="tab" 
+						[attr.data-bs-target]="attrTarget + item.id_reg"
+						(click)="getChat(item)"
+						 >
+							<img [src]="avatarDummyDirector" alt="avatar">
+							<div class="about">
+								<div class="name"> {{ item.NOM_RECEPTOR }} </div>
+								<div class="name"> Asunto: {{ item.asunto }} </div>
+								<div class="status"> <i class="fa fa-circle offline"></i> {{ item.estado }} </div>
+							</div>
+						</li>
+					<!--<li class="clearfix active" data-bs-toggle="tab" data-bs-target="#marked-message-1">
+						<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
+						<div class="about">
+							<div class="name">Vincent Porter</div>
+							<div class="status"><i class="fa fa-circle offline"></i> left 7 mins ago</div>
+						</div>
+					</li>
+					<li class="clearfix" data-bs-toggle="tab" data-bs-target="#marked-message-2">
+					<img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
+					<div class="about">
+					<div class="name">Aiden Chavez</div>
+					<div class="status"> <i class="fa fa-circle online"></i> online </div>
+					</div>
+					</li>
+					<li class="clearfix" data-bs-toggle="tab" data-bs-target="#marked-message-3">
+					<img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar">
+					<div class="about">
+					<div class="name">Mike Thomas</div>
+					<div class="status"> <i class="fa fa-circle online"></i> online </div>
+					</div>
+					</li>
+					<li class="clearfix" data-bs-toggle="tab" data-bs-target="#marked-message-4">
+					<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
+					<div class="about">
+					<div class="name">Christian Kelly</div>
+					<div class="status"> <i class="fa fa-circle offline"></i> left 10 hours ago </div>
+					</div>
+					</li>
+					<li class="clearfix" data-bs-toggle="tab" data-bs-target="#marked-message-5">
+					<img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="avatar">
+					<div class="about">
+					<div class="name">Monica Ward</div>
+					<div class="status"> <i class="fa fa-circle online"></i> online </div>
+					</div>
+					</li>
+					<li class="clearfix" data-bs-toggle="tab" data-bs-target="#marked-message-6">
+					<img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar">
+					<div class="about">
+					<div class="name">Dean Henry</div>
+					<div class="status"> <i class="fa fa-circle offline"></i> offline since Oct 28 </div>
+					</div>
+					</li> 
+-->
+					</ul>
+
+
+
+					</div>
+
+					<div class="chat">
+						
+						<div *ngIf="showChat" class="wrapp-if">
+							<div class="wrapper-mensaje">
+								<i class="bx bx-message-rounded-dots icono-chat"></i>
+								<h3 class="welcome">Bienvenido al chat</h3>
+								<span class="help">Para iniciar una conversación debes hacer click en unos de tus mensajes</span>
+							</div>
+						</div>
+
+
+
+						<div class="tab-content">
+							
+							<div *ngFor="let item of userChatCab" class="tab-pane message-body fade" [attr.id]="attrTargetTab + item.id_reg" role="tabpanel">
+								<app-chat-buble [ID_reg]="chatBubles"></app-chat-buble>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- <div class="container">
+	<div class="row">
+
+		<div class="col-6">
+			<div class="bd-callout bd-callout-code">
+			<h4>Cabecera chat:</h4>
+			<pre>{{ userChatCab | json }}</pre>				
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="bd-callout bd-callout-code">
+				<h4>Chat buble:</h4>
+				<pre>{{ chatBubles | json }}</pre>
+			</div>
+		</div>
+		
+	</div>
+</div> -->

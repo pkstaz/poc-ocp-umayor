@@ -1,0 +1,295 @@
+$color_link: #007bff;
+
+.wrapp-accordion {
+  .card {
+    margin-bottom: .35em;
+    border-radius: 0;
+
+    .card-header {
+      background-color: $color_link;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-line-pack: stretch;
+      align-content: stretch;
+      cursor: pointer;
+
+      .link-accordion {
+        @include opensans(1rem, 400, #fff);
+        display: inline-block;
+        vertical-align: middle;
+        width: 93%;
+      }
+
+      &::after {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f067";
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        /* float: right; */
+        padding: 0;
+        margin: 0;
+        @include transicion;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      &.collapsed::after {
+        font: normal normal normal 14px/1 FontAwesome;
+        /* symbol for "collapsed" panels */
+        content: "\f068";
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        /* float: right; */
+        padding: 0;
+        margin: 0;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+
+    }
+
+    .collapse {
+      .card-body {
+        .title {
+          @include opensans(1.8rem, 500, #333);
+        }
+
+        .sumary {
+          @include opensans(1rem, 400, #333);
+        }
+
+        ul.lista-collapse {
+          list-style: none;
+          margin: 0 0 25px 0;
+          padding: 0;
+
+          li {
+            @include opensans(1rem, 400, #333);
+            margin: 0 0 15px 0;
+
+            &::before {
+              content: "\f00c";
+              font: normal normal normal 14px/1 FontAwesome;
+              color: #28a745;
+              margin: 0 8px 0 0;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*
+* Acordeon umayor
+**/
+.wrapp-acordeon {
+  margin: 0 0 .5rem 0;
+  padding: 1rem;
+
+  .link-acordeon {
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0px 3px 8px -6px rgba(0, 0, 0, 0.7);
+    transition: all .2s ease-in-out;
+
+    &::after {
+      content: '\e920';
+      position: absolute;
+      right: 1rem;
+      font-family: 'umayor';
+      color: $color-text;
+      font-weight: bold;
+
+    }
+
+    &[aria-expanded="true"] {
+
+      background-color: $yellow;
+      box-shadow: none;
+
+      &::after {
+        content: '\e921';
+        position: absolute;
+        right: 1rem;
+        font-family: 'umayor';
+        color: $color-text;
+        font-weight: bold;
+
+      }
+
+      .icono-acordeon,
+      .title-acordeon {
+        color: #000;
+      }
+    }
+
+    .icono-acordeon {
+      font-size: 1.5rem;
+      display: inline-block;
+      vertical-align: middle;
+      color: $color-text;
+      margin: 0 8px 0 0;
+      padding: 0;
+    }
+
+    .title-acordeon {
+      @include opensans(1rem, 600, $color-text);
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .panel-collapse {
+    &.panel-collapse {
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 1px 3px 5px -3px rgb(0 0 0 / 16%);
+      border-left: 1px solid #E5E5E5;
+      border-right: 1px solid #E5E5E5;
+      border-bottom: 1px solid #E5E5E5;
+
+      .card {
+        border-radius: 0;
+
+        &.card-body {
+          background-color: whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+#modulos {
+  .wrapp-modulo {
+    background-color: rgb(255, 255, 255);
+    margin: 0 0 .75rem 0;
+    padding: 0;
+
+    .link-modulo {
+      background-color: #333;
+      border: 1px solid #333;
+      width: 100%;
+      padding: 0.875rem;
+      margin: 0;
+      text-decoration: none;
+      position: relative;
+      transition: all .2s ease-in-out;
+      border-radius: 5px;
+      height: 3.75rem;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: stretch;
+
+      &::after {
+        content: '\e93e';
+        font-family: 'umayor';
+        color: #fff;
+        font-weight: normal;
+        vertical-align: middle;
+        display: inline-block;
+        position: absolute;
+        right: 1.2rem;
+
+
+      }
+
+      &[aria-expanded="true"] {
+
+        background-color: #333;
+        box-shadow: none;
+        border-radius: 5px 5px 0 0;
+        height: 4.375rem;
+
+        &::after {
+          content: '\e93e';
+          position: absolute;
+          right: 1.2rem;
+          font-family: 'umayor';
+          color: #fff;
+
+        }
+
+        .icono-acordeon,
+        .title-acordeon {
+          color: #fff;
+        }
+      }
+
+      .icono-acordeon {
+        font-size: 1.5rem;
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        margin: 0 8px 0 0;
+        padding: 0;
+      }
+
+      .title-acordeon {
+        @include opensans(1rem, 600, #fff);
+        display: inline-block;
+        text-transform: uppercase;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .panel-collapse {
+      &.panel-collapse {
+        background-color: #fff;
+        padding: 1rem .875rem;
+        box-shadow: none;
+        border-left: 1px solid #e7e7e7;
+        border-right: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        border-radius: 0 0 8px 8px;
+
+        .content-modulo {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.modulos .mat-expansion-panel-header-title,
+.modulos .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.modulos .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}

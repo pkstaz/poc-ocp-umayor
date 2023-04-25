@@ -1,0 +1,750 @@
+<section class="section profile">
+	<div class="row">
+
+		<div class="col-lg-4">
+			<div class="card shadow-md profile-card ">
+				<div class="card-body">
+					<div class="d-flex flex-column align-items-center text-center">
+						<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin"
+							class="rounded-circle p-1 bg-primary" width="110">
+						<div class="mt-3">
+ 							<h4 class="fullname-profile">{{ fullDataAcademic.nombre | titlecase }}</h4>
+							<!--
+							<h4 class="fullname-profile">{{ fullDataAcademic.nombre | lowercase }}</h4>
+							<h4 class="fullname-profile">{{ fullDataAcademic.nombre | uppercase }}</h4>
+							<h6 class="fullname-profile">{{ fullDataAcademic.nombre | capitalizeFirst }}</h6>
+						 	-->
+							<p class="occupation-profile">{{ fullDataAcademic.titulo }}</p>
+							<p class="fulldirection-profile">{{ fullDataAcademic.nivel_educ_max }}</p>
+							<div class="wrapp-btn p-2 my-3">
+								<button class="btn btn-full-custom verde" (click)="activarToastr()">Seguir</button>
+								<button class="btn btn-full-custom naranjo mx-2">Mensaje</button>
+							</div>
+						</div>
+					</div>
+					<hr class="my-4">
+					<ul class="list-group list-group-flush redes-sociales-perfil">
+						<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+							<h6 class="mb-0 title-icono"><i class="bx bxl-linkedin icono"></i>
+								Linkedin</h6>
+							<span class="text-secondary">johnDoe</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+							<h6 class="mb-0 title-icono"><i class="bx bxl-twitter icono"></i>Twitter</h6>
+							<span class="text-secondary">johnDoe</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+							<h6 class="mb-0 title-icono"><i class="bx bxl-facebook icono"></i>Facebook</h6>
+							<span class="text-secondary">johnDoe</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+							<h6 class="mb-0 title-icono"><i class="bx bxl-whatsapp icono"></i>Whatsapp</h6>
+							<span class="text-secondary">+569 912345678</span>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-8">
+			<div class="card shadow-md profile-tabs ">
+				<div class="card-body pt-3">
+					<!-- Bordered Tabs -->
+					<ul class="nav nav-tabs nav-tabs-bordered">
+						<li class="nav-item">
+							<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Resumen</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Editar perfil</button>
+						</li>
+					<!-- 	<li class="nav-item">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Settings</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Cambiar
+								Password</button>
+						</li> -->
+						<li class="nav-item">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-myasignatures">
+								Asignaturas</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Disponilidad</button>
+						</li> 
+					</ul>
+					<div class="tab-content p-3">
+
+						<div id="profile-overview" class="tab-pane fade show active profile-overview  pt-3">
+
+							<div class="container">
+								<h5 class="title">Sobre mi</h5>
+								<p class="sumary">Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora
+									libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis
+									odit. Fuga sequi sed ea saepe at unde.</p>
+
+								<h5 class="title">Detalles perfil</h5>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Nombre completo</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ fullDataAcademic.nombre | titlecase }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Facultad</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ fullDataAcademic.facultad }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Función Principal</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ fullDataAcademic.funcion_ppal }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Division</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ fullDataAcademic.division }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Esc.Carr.Nuc</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ fullDataAcademic.esc_carr_nuc }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Jornada</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ fullDataAcademic.jornada_ctto }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Email</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ fullDataAcademic.email }}</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div id="profile-edit" class="tab-pane fade profile-edit pt-3">
+							<!-- ForGroup | ProfileForm -->
+							<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" autocomplete="off">
+
+								<!-- INPUT/Upload image -->
+								<div class="row mb-3">
+									<label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+									<div class="col-md-8 col-lg-9">
+										<!-- Upload image  
+												<div class="avatar-upload">
+													<div class="avatar-edit">
+														<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)" />
+														<label for="imageUpload" *ngIf="editFile" [ngClass]="['custom-label', 'upload-image']"></label>
+														<label *ngIf="removeUpload" [ngClass]="['custom-label', 'remove-image']" (click)="removeUploadedFile()"></label>
+													</div>
+													<div class="avatar-preview">
+														<div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+														</div>
+													</div>
+												</div>
+											-->
+										<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="p-1 bg-primary"
+											width="110">
+										<div class="wrapp-btn mt-3">
+											<a href="#" class="btn btn-full-custom verde" title="Upload new profile image"><i
+													class="bi bi-upload"></i></a>
+											<a href="#" class="btn btn-full-custom naranjo mx-2" title="Remove my profile image"><i
+													class="bi bi-trash"></i></a>
+										</div>
+									</div>
+								</div>
+								<!-- INPUT/nombre -->
+								<div class="row form-group mb-3">
+									<label for="fullnombre" class="col-sm-3 col-form-label custom-label">Nombre completo</label>
+									<div class="col-sm-9">
+										<!-- 
+											[class.is-invalid]="fullnombreInValid"
+										[class.is-valid]="fullnombreValid"	
+											[attr.readonly]="inputReadonly" -->
+										<input 
+										type="text"
+										id="fullnombre"
+										name="fullnombre"
+										class="form-control custom-form-control"
+										formControlName="fullnombre"
+										[class.is-invalid]="fullnombreInValid"
+										[class.is-valid]="fullnombreValid"	
+										[attr.readonly]="inputReadonly"							
+										
+										>
+										<!-- <div *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="alert alert-danger"> -->
+										<div *ngIf="submitted &&  getControl['fullnombre']?.invalid && (getControl['fullnombre']?.dirty || getControl['fullnombre']?.touched)"
+											class="invalid-feedback">
+												<div *ngIf="getControl['fullnombre'].errors?.['required']">
+													This field is required.
+												</div>
+											</div>
+										<!-- <div *ngIf="getControl['fullnombre'].invalid && (getControl['fullnombre'].dirty || getControl['fullnombre'].touched)" class="invalid-feedback">
+											<div *ngIf="getControl['fullnombre'].errors?.['required']">
+												This field is required.
+											</div>
+										  <div *ngIf="getControl['fullnombre'].errors?.['minlength']">
+												This field must have at least 1 character.
+											</div>
+											<div *ngIf="getControl['fullnombre'].errors?.['maxlength']">
+												This field must have at most 250 characters.
+											</div>  
+										</div> -->
+										<div class="alert alert-warning mt-3" role="alert">
+
+										<strong>Valid?: <span
+												[class]="getControl['fullnombre'].valid === true ? 'badge text-bg-success mx-1':'badge text-bg-danger mx-1'">{{
+												getControl['fullnombre'].valid}}</span></strong> |
+										<strong>Invalid?: </strong><span
+											[class]="getControl['fullnombre'].invalid === true ? 'badge text-bg-success mx-1': 'badge text-bg-danger mx-1'">{{
+											getControl['fullnombre'].invalid}}</span> |
+										<strong>Touched?: </strong><span
+											[class]="getControl['fullnombre'].touched === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+											getControl['fullnombre'].touched}}</span> |
+										<strong>Untouched?: </strong><span
+											[class]="getControl['fullnombre'].untouched === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+											getControl['fullnombre'].untouched}}</span> |
+										<strong>Dirty?: </strong><span
+											[class]="getControl['fullnombre'].dirty === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+											getControl['fullnombre'].dirty}}</span> |
+										<strong>Pristine? </strong><span
+											[class]="getControl['fullnombre'].pristine === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{getControl['linkedin'].pristine}}</span>
+
+										</div>																		
+									</div>								
+								</div>
+								<!-- INPUT/summary -->
+								<div class="row form-group mb-3">
+									<label for="summary" class="col-sm-3 col-form-label custom-label">Resumen</label>
+									<div class="col-sm-9">
+										<textarea
+										class="form-control custom-form-control"
+										id="summary"
+										formControlName="summary"
+										[class.is-invalid]="summaryInValid"
+                    [class.is-valid]="summaryValid"
+										rows="5"
+										[value]="value"
+										[maxlength]="maxChars"
+										minlength="1"
+										#summary
+										></textarea>
+
+										<div class="alert alert-warning mt-3" role="alert">
+										
+											<strong>Valid?: <span
+													[class]="getControl['summary'].valid === true ? 'badge text-bg-success mx-1':'badge text-bg-danger mx-1'">{{
+													getControl['summary'].valid}}</span></strong> |
+											<strong>Invalid?: </strong><span
+												[class]="getControl['summary'].invalid === true ? 'badge text-bg-success mx-1': 'badge text-bg-danger mx-1'">{{
+												getControl['summary'].invalid}}</span> |
+											<strong>Touched?: </strong><span
+												[class]="getControl['summary'].touched === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+												getControl['summary'].touched}}</span> |
+											<strong>Untouched?: </strong><span
+												[class]="getControl['summary'].untouched === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+												getControl['summary'].untouched}}</span> |
+											<strong>Dirty?: </strong><span
+												[class]="getControl['summary'].dirty === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+												getControl['summary'].dirty}}</span> |
+											<strong>Pristine? </strong><span
+												[class]="getControl['summary'].pristine === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{getControl['linkedin'].pristine}}</span>
+										
+										</div>
+
+										<div *ngIf="getControl['summary'].invalid && (getControl['summary'].dirty || getControl['summary'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['summary'].errors?.['required']">This field is required.</div>
+										</div>
+										<small id="emailHelp" class="form-text text-muted"><span class="badge text-bg-secondary">Límite de caracteres:
+												{{summary.value.length}}/{{maxChars}}</span></small>
+									</div>
+								</div>
+								<!-- INPUT/EscCarrNucl -->
+								<div class="row form-group mb-3">
+									<label class="col-sm-3 col-form-label custom-label">Esc/Carr/Núcl</label>
+									<div class="col-sm-9">										
+										<input
+										type="text"
+										name="EscCarrNucl"
+										id="EscCarrNucl"
+										class="form-control custom-form-control"
+										formControlName="EscCarrNucl"
+										[class.is-invalid]="EscCarrNuclInValid"
+										[class.is-valid]="EscCarrNuclValid"
+											>
+											<div class="alert alert-warning mt-3" role="alert">
+											
+												<strong>Valid?: <span
+														[class]="getControl['EscCarrNucl'].valid === true ? 'badge text-bg-success mx-1':'badge text-bg-danger mx-1'">{{
+														getControl['EscCarrNucl'].valid}}</span></strong> |
+												<strong>Invalid?: </strong><span
+													[class]="getControl['EscCarrNucl'].invalid === true ? 'badge text-bg-success mx-1': 'badge text-bg-danger mx-1'">{{
+													getControl['EscCarrNucl'].invalid}}</span> |
+												<strong>Touched?: </strong><span
+													[class]="getControl['EscCarrNucl'].touched === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+													getControl['EscCarrNucl'].touched}}</span> |
+												<strong>Untouched?: </strong><span
+													[class]="getControl['EscCarrNucl'].untouched === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+													getControl['EscCarrNucl'].untouched}}</span> |
+												<strong>Dirty?: </strong><span
+													[class]="getControl['EscCarrNucl'].dirty === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{
+													getControl['EscCarrNucl'].dirty}}</span> |
+												<strong>Pristine? </strong><span
+													[class]="getControl['EscCarrNucl'].pristine === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{getControl['linkedin'].pristine}}</span>
+											
+											</div>
+										<div
+											*ngIf="getControl['EscCarrNucl'].invalid && (getControl['EscCarrNucl'].dirty || getControl['EscCarrNucl'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['EscCarrNucl'].errors?.['required']">This field is required.</div>
+										</div>
+
+
+
+									</div>
+								</div>
+								<!-- INPUT/areaPers -->
+								<div class="row form-group mb-3">
+									<label class="col-sm-3 col-form-label custom-label">Area Personal</label>
+									<div class="col-sm-9">
+										
+										<input
+										type="text"
+										name="areaPers"
+										id="areaPers"
+										class="form-control custom-form-control"
+										formControlName="areaPers"
+										[class.is-invalid]="areaPersInValid"
+										[class.is-valid]="areaPersValid"
+										[attr.disabled]="inputReadonly"
+										>
+										<div
+											*ngIf="getControl['areaPers'].invalid && (getControl['areaPers'].dirty || getControl['areaPers'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['areaPers'].errors?.['required']">This field is required.</div>
+										</div>
+									
+									</div>
+								</div>
+								<!-- INPUT/facultad -->
+								<div class="row form-group mb-3">
+									<label class="col-sm-3 col-form-label custom-label">Facultad</label>
+									<div class="col-sm-9">
+										
+										<input
+										type="text"
+										name="facultad"
+										id="facultad"
+										class="form-control custom-form-control"
+										formControlName="facultad"
+										[class.is-invalid]="facultadInValid"
+										[class.is-valid]="facultadValid"
+										[attr.disabled]="inputReadonly"
+										>
+										<div
+											*ngIf="getControl['facultad'].invalid && (getControl['facultad'].dirty || getControl['facultad'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['facultad'].errors?.['required']">This field is required.</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- INPUT/divPersonal -->	
+								<div class="row form-group mb-3">
+									<label class="col-sm-3 col-form-label custom-label">Div.Personal</label>
+									<div class="col-sm-9">
+										<!-- [attr.disabled]="inputReadonly" -->
+										<input
+										type="text"
+										name="divPersonal"
+										id="divPersonal"
+										class="form-control custom-form-control"
+										formControlName="divPersonal"
+										[class.is-invalid]="divPersonalInValid"
+										>
+										<div
+											*ngIf="getControl['divPersonal']?.invalid && (getControl['divPersonal']?.dirty || getControl['divPersonal']?.touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['divPersonal'].errors?.['required']">This field is required.</div>
+										</div>
+
+										
+
+									</div>
+								</div>
+								<!-- INPUT/jerarquia -->
+								<div class="row form-group mb-3">
+									<label class="col-sm-3 col-form-label custom-label">Jerarquía</label>
+									<div class="col-sm-9">
+										
+										<input
+										type="text"
+										name="jerarquia"
+										id="jerarquia"
+										class="form-control custom-form-control"
+										formControlName="jerarquia"
+										[class.is-invalid]="jerarquiaInValid"
+										[class.is-valid]="jerarquiaValid"
+										[attr.disabled]="inputReadonly"
+										>
+										<div
+											*ngIf="getControl['jerarquia'].invalid && (getControl['jerarquia'].dirty || getControl['jerarquia'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['jerarquia'].errors?.['required']">This field is required.</div>
+										</div>
+
+
+									</div>
+								</div>
+								<!-- INPUT/titulo -->
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Titulo</label>
+									<div class="col-sm-9">
+										
+										<input
+										type="text"
+										name="titulo"
+										id="titulo"
+										class="form-control custom-form-control"
+										formControlName="titulo"
+										[class.is-invalid]="tituloInValid"
+										[class.is-valid]="tituloValid"
+										[attr.disabled]="inputReadonly"
+										>
+										<div *ngIf="getControl['titulo'].invalid && (getControl['titulo'].dirty || getControl['titulo'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['titulo'].errors?.['required']">This field is required.</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- INPUT/nivelEducMax -->
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Nivel Educ.Máx.</label>
+									<div class="col-sm-9">
+										
+										<input
+										type="text"
+										name="nivelEducMax"
+										id="nivelEducMax"
+										class="form-control custom-form-control"
+										formControlName="nivelEducMax"
+										[class.is-invalid]="nivelEducMaxInValid"
+										[class.is-valid]="nivelEducMaxValid"
+										[attr.disabled]="inputReadonly"
+										>
+										<div *ngIf="getControl['nivelEducMax'].invalid && (getControl['nivelEducMax'].dirty || getControl['nivelEducMax'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['titulo'].errors?.['required']">This field is required.</div>
+										</div>
+
+
+
+									</div>
+								</div>
+								<!-- INPUT/jornadaCtto -->
+								<div class="row form-group mb-3">
+									<label for="jornadaCtto" class="col-sm-3 col-form-label custom-label">Jornada Contratada</label>
+									<div class="col-sm-9">
+										<input type="text" name="jornadaCtto" id="jornadaCtto" class="form-control custom-form-control"
+											formControlName="jornadaCtto" [class.is-invalid]="jornadaCttoInValid" [class.is-valid]="jornadaCttoValid"
+											[attr.disabled]="inputReadonly">
+										<div
+											*ngIf="getControl['jornadaCtto'].invalid && (getControl['jornadaCtto'].dirty || getControl['jornadaCtto'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['jornadaCtto'].errors?.['required']">This field is required.</div>
+										</div>
+									</div>
+								</div>
+								<!-- INPUT/funcionPpal -->
+								<div class="row form-group mb-3">
+									<label for="funcionPpal" class="col-sm-3 col-form-label custom-label">Función Principal</label>
+									<div class="col-sm-9">
+										<input type="text" name="funcionPpal" id="funcionPpal" class="form-control custom-form-control"
+											formControlName="funcionPpal" [class.is-invalid]="funcionPpalInValid" [class.is-valid]="funcionPpalValid"
+											[attr.disabled]="inputReadonly">
+										<div
+											*ngIf="getControl['funcionPpal'].invalid && (getControl['funcionPpal'].dirty || getControl['funcionPpal'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['funcionPpal'].errors?.['required']">This field is required.</div>
+										</div>
+									</div>
+								</div>
+								<!-- INPUT/email -->
+								<div class="row form-group mb-3">
+									<label for="email" class="col-sm-3 col-form-label custom-label">Email</label>
+									<div class="col-sm-9">
+										
+										<input
+										type="email"
+										name="email"
+										id="email"
+										class="form-control custom-form-control"
+										formControlName="email"
+										[class.is-invalid]="emailInValid"
+										[class.is-valid]="emailValid"
+										[attr.disabled]="inputReadonly"
+										>
+										<div
+											*ngIf="getControl['email'].invalid && (getControl['email'].dirty || getControl['email'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['email'].errors?.['required']">This field is required.</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- INPUT/telefono -->
+								<div class="row form-group mb-3">
+									<label for="telefono" class="col-sm-3 col-form-label custom-label">Teléfono</label>
+									<div class="col-sm-9">
+										
+										<input type="text" name="telefono" id="telefono" class="form-control custom-form-control" formControlName="telefono"
+											[class.is-invalid]="telefonoInValid" [class.is-valid]="telefonoValid" placeholder="+569">
+										<div *ngIf="getControl['telefono'].invalid && (getControl['telefono'].dirty || getControl['telefono'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['telefono'].errors?.['required']">This field is required.</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- <div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Función Secundaria</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control" value="ACADÉMICO REGULAR" disabled>
+									</div>
+								</div> -->
+								<!-- INPUT/twitter -->
+								<div class="row form-group mb-3">
+									<label for="twitter" class="col-sm-3 col-form-label custom-label">Twitter Profile</label>
+									<div class="col-sm-9">
+										<input type="text" name="twitter" id="twitter" class="form-control custom-form-control"
+											formControlName="twitter" [class.is-invalid]="twitterInValid" [class.is-valid]="twitterValid"
+											[attr.disabled]="inputReadonly" placeholder="https://">
+										<div *ngIf="getControl['twitter'].invalid && (getControl['twitter'].dirty || getControl['twitter'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['twitter'].errors?.['required']">This field is required.</div>
+										</div>
+									</div>
+								</div>
+								<!-- INPUT/facebook -->
+								<div class="row form-group mb-3">
+									<label for="facebook" class="col-sm-3 col-form-label custom-label">Facebook Profile</label>
+									<div class="col-sm-9">
+										<input type="text" name="facebook" id="facebook" class="form-control custom-form-control" formControlName="facebook"
+											[class.is-invalid]="facebookInValid" [class.is-valid]="facebookValid" [attr.disabled]="inputReadonly" placeholder="https://">
+										<div *ngIf="getControl['facebook'].invalid && (getControl['facebook'].dirty || getControl['facebook'].touched)"
+											class="invalid-feedback">
+											<div *ngIf="getControl['facebook'].errors?.['required']">This field is required.</div>
+										</div>
+									</div>
+								</div>
+								<!-- INPUT/linkedin -->
+								<div class="row form-group mb-3">
+									<label for="linkedin" class="col-sm-3 col-form-label custom-label">Linkedin Profile</label>
+									<div class="col-sm-9">
+											<input type="text" name="linkedin" id="linkedin" class="form-control custom-form-control" formControlName="linkedin"
+												[class.is-invalid]="linkedinInValid" [class.is-valid]="linkedinValid" [attr.disabled]="inputReadonly" placeholder="https://">
+											<div *ngIf="getControl['linkedin'].invalid && (getControl['linkedin'].dirty || getControl['linkedin'].touched)"
+												class="invalid-feedback">
+												<div *ngIf="getControl['linkedin'].errors?.['required']">This field is required.</div>
+											</div>
+
+											<div class="alert alert-warning mt-3" role="alert">
+											
+<strong>Valid?: <span [class]="getControl['linkedin'].valid === true ? 'badge text-bg-success mx-1':'badge text-bg-secondary mx-1'">{{ getControl['linkedin'].valid}}</span></strong> | 
+<strong>Invalid?: </strong><span [class]="getControl['linkedin'].invalid === true ? 'badge text-bg-success mx-1': 'badge text-bg-danger mx-1'">{{ getControl['linkedin'].invalid}}</span> |
+<strong>Touched?: </strong><span [class]="getControl['linkedin'].touched === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{ getControl['linkedin'].touched}}</span> |
+<strong>Untouched?: </strong><span [class]="getControl['linkedin'].untouched === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{ getControl['linkedin'].untouched}}</span> |
+<strong>Dirty?: </strong><span [class]="getControl['linkedin'].dirty === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{ getControl['linkedin'].dirty}}</span> |
+<strong>Pristine? </strong><span [class]="getControl['linkedin'].pristine === true ? 'badge text-bg-success mx-1': 'badge text-bg-warning mx-1'">{{getControl['linkedin'].pristine}}</span>
+											
+											</div>
+									</div>
+								</div>
+								<!-- BUTTON/profileForm -->
+								<div class="wrapp-btn btn-right mt-3">
+									 <button type="submit" class="btn btn-full-custom verde" [disabled]="!profileForm.valid">Guardar cambios <i class="bi bi-save"></i></button> 
+								</div>
+								<div class="col-12 p-3">
+									<div class="alert alert-info">
+										<strong>Estado del formulario:</strong>
+										<hr><!-- status=='error' ? 'red': 'green' -->
+										<!-- <span class="mx-1">VALID: <span [class.myClass]="hasError() ? 'red' : 'size20'" class="badge badge-success mx-1">{{ tablaFechas.valid }}</span></span> -->
+										<span class="mx-1">VALID: <span [class]="profileForm.status=='VALID' ? 'badge text-bg-success mx-1': 'badge text-bg-danger mx-1'">{{ profileForm.valid
+												}}</span></span>
+										<span class="mx-1">INVALID: <span [class]="profileForm.status =='INVALID' ? 'badge text-bg-success mx-1': 'badge text-bg-danger mx-1'">{{ profileForm.invalid }}</span></span>
+										<span class="mx-1">STATUS: <span class="badge text-bg-primary mx-1">{{ profileForm.status }}</span></span>
+										<span class="mx-1">DISABLED: <span class="badge text-bg-warning mx-1">{{ profileForm.disabled }}</span></span>
+										<hr>
+										 <pre>{{ profileForm.value | json }}</pre> 
+									</div>
+								</div>
+							</form><!-- End Profile Edit Form -->
+
+						</div>
+
+						<!-- <div id="profile-settings" class="tab-pane fade profile-settings pt-3">
+							<form>
+								<div class="row form-group mb-3">
+									<label for="fullName" class="col-md-4 col-lg-3 col-form-label">Notificaciones por email</label>
+									<div class="col-md-8 col-lg-9">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="changesMade" checked>
+											<label class="form-check-label" for="changesMade">
+												Cambios en la cuenta
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="newProducts" checked>
+											<label class="form-check-label" for="newProducts">
+												Información de nuevos puestos
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="proOffers">
+											<label class="form-check-label" for="proOffers">
+												Información email de marketing de la Universidad
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="securityNotify" checked disabled>
+											<label class="form-check-label" for="securityNotify">
+												Alertas de mensajes
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="wrapp-btn btn-right mt-3">
+									<button type="submit" class="btn btn-full-custom verde">Guardar cambios <i
+											class="bi bi-save"></i></button>
+								</div>
+							</form>
+						</div> -->
+
+						<!-- <div id="profile-change-password" class="tab-pane fade profile-change-password pt-3">
+						 
+							<form>
+
+								<div class="row form-group mb-3">
+									<label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Cambio de password</label>
+									<div class="col-md-8 col-lg-9">
+										<input name="password" type="password" class="form-control custom-form-control"
+											id="currentPassword">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Nueva Password</label>
+									<div class="col-md-8 col-lg-9">
+										<input name="newpassword" type="password" class="form-control custom-form-control" id="newPassword">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-ingresar nueva Password</label>
+									<div class="col-md-8 col-lg-9">
+										<input name="renewpassword" type="password" class="form-control custom-form-control"
+											id="renewPassword">
+									</div>
+								</div>
+
+								<div class="wrapp-btn btn-right mt-3">
+									<button type="submit" class="btn btn-full-custom verde">Guardar cambios <i
+											class="bi bi-save"></i></button>
+								</div>
+
+								
+							</form> 
+
+						</div> -->
+
+						<div id="profile-myasignatures" class="tab-pane fade profile-myasignatures pt-3">
+
+							<!-- tabla mis asignaturas -->
+							<div class="row">
+								<div class="col-12">
+									<small name="" class="badge text-bg-primary">{{ nameVersion }}</small>
+								</div>
+								 <div class="col-12">
+									<div class="wrapp-btn btn-right mt-3">
+										<button type="submit" class="btn btn-full-custom naranjo">Agregar asignaturas <i class="bi bi-save"></i></button>
+									</div>
+								</div> 
+								<div class="col-12">									
+									<div class="table-responsive">
+
+										<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" id="asignatures-academic" class="table table-striped table-hover" [ngStyle]="styleTable">
+											<thead class="table-dark">
+												<tr>
+													<th scope="col">#ID</th>
+													<th scope="col" class="d-none">Rut</th>
+													<th scope="col">Cod. Modulo</th>
+													<th scope="col">Desc. Asignatura</th>
+													<th scope="col">Actividad</th>
+													<th scope="col">Regimen</th>
+													<th scope="col">Nivel</th>
+													<th scope="col">Plan</th>
+													<th scope="col">Acciones</th>
+												</tr>
+											</thead>
+											<tbody class="table-group-divider">
+												<tr *ngFor="let asignatura of userAsignaturas; let i = index">
+													<th scope="row" class="text-center">{{ i + 1 }}</th>
+													<td class="d-none">{{ asignatura.rut_docente }}</td>
+													<td class="text-center">{{ asignatura.cod_modulo }}</td>
+													<td>{{ asignatura.descripcion_asignatura | capitalizeFirst}}</td>
+													<td>{{ asignatura.desc_actividad }}</td>
+													<td class="text-center">{{ asignatura.regimen }}</td>
+													<td class="text-center">{{ asignatura.nivel }}</td>
+													<td>{{ asignatura.cod_plan }}</td>
+													<td  class="text-center">
+														<ul class="list-inline mb-0">
+															<li class="list-inline-item dropdown">
+																<a class="text-muted dropdown-toggle foo-lg px-2" href="#" role="button" data-bs-toggle="dropdown"
+																	aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top"
+																		title="Chatear con el docente" class="dropdown-item">Editar</a>
+																	<a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver docente"
+																		class="dropdown-item">Agregar</a>
+																	<a class="dropdown-item" href="#">Otra acción</a>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div><!--./table-responsive-->
+								</div>
+								<!-- <div class="col-md-6">
+								<code>{{checklist}}</code>
+							</div> -->
+								 <div  class="col-12">
+									<div class="wrapp-btn btn-right mt-3">
+										<button type="submit" class="btn btn-full-custom verde">Guardar asignaturas <i class="bi bi-save"></i></button>
+									</div>
+								</div> 
+							</div>
+							<!-- End tabla mis asignaturas -->
+						</div>
+					</div><!-- End Bordered Tabs -->
+				</div>
+			</div>
+		</div>
+
+		<div class="col-6">
+		<div class="bd-callout bd-callout-code">
+			<h4>Información Profile:</h4>
+			<pre>{{ fullDataAcademic | json }}</pre>
+		</div>
+		</div>  
+		<div class="col-6">
+		<div class="bd-callout bd-callout-code">
+			<h4>Información Asignaturas:</h4>
+			<pre>{{ userAsignaturas | json }}</pre>
+		</div>
+		</div>
+	</div>
+</section>

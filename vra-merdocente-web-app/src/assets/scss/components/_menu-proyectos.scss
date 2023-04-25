@@ -1,0 +1,84 @@
+.nav-buttons {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    .button-proyecto {
+        background-color: $yellow;
+        display: inline-block;
+        width: 100%;
+        height: 200px;
+        color: $color-text;
+        text-decoration: none;
+        text-align: center;
+        margin: 1rem 0;
+        border-radius: .313rem;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+        position: relative;
+        border: 3px solid #facd06;
+
+        &:hover {
+            background-color: #444;
+            color: #fff;
+            @include zoom-box(1.01);
+            @include shadow-bottom;
+            border: 3px solid #222;
+
+            &::after {
+                content: '\e93c';
+                font-family: 'umayor';
+                position: absolute;
+                font-size: 1.2rem;
+                bottom: .5rem;
+                right: .5rem;
+                opacity: .3;
+            }
+
+        }
+
+        &:active {
+            position: relative;
+            top: 1px;
+        }
+
+        &:focus {
+            background-color: $color-text;
+            color: #fff;
+            box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, .3);
+
+            &::after {
+                content: '\e93c';
+                font-family: 'umayor';
+                position: absolute;
+                font-size: 1.2rem;
+                bottom: .5rem;
+                right: .5rem;
+                opacity: .3;
+            }
+        }
+
+
+        .wrapp-element-btn {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 200px;
+
+            .icono-btn-proyecto {
+                font-size: 4rem;
+                display: block;
+            }
+
+            .title-proyecto {
+                font-family: 'Open sans', Arial, sans-serif;
+                font-weight: 700;
+                display: inline-block;
+                margin: .25rem 0 0 0;
+            }
+        }
+    }
+}

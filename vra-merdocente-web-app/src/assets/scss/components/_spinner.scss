@@ -1,0 +1,163 @@
+/* 
+ * @spinner custom 
+ **/
+.spinner-cnt {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+
+  /*display: none;*/
+  .spinner-shadow {
+    // background: #ccc;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 7777;
+  }
+
+  .spinner {
+    margin-top: -30px;
+    margin-left: -30px;
+    /* border-radius: 50%; */
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 7777;
+    background-position: center center;
+  }
+
+  .spinner,
+  .message,
+  .spin-circle {
+    position: fixed;
+    top: 60%;
+    left: 60%;
+    text-align: center;
+  }
+
+  .spin-circle {
+    margin-top: -125px;
+    margin-left: -125px;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 0, 0, .2);
+    opacity: .1;
+    filter: alpha(opacity=10);
+    /* border-radius: 50%; */
+    -webkit-animation: scaleout 2.5s infinite ease;
+    animation: scaleout 3s infinite ease;
+    border: 1px solid #ccc;
+    z-index: 5000;
+  }
+
+  .message {
+    margin-top: 35px;
+    margin-left: -100px;
+    width: 200px;
+    height: 50px;
+    @include opensans(1rem, 400, #fff);
+    line-height: 50px;
+    z-index: 100;
+
+  }
+
+  /* delay */
+  .spin-circle {
+    &.delay-one {
+      -webkit-animation-delay: 1s;
+
+    }
+  }
+
+  .spin-circle {
+    &.delay-two {
+      -webkit-animation-delay: 2s;
+    }
+  }
+}
+
+@-webkit-keyframes SPIN {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes SPIN {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes SPIN {
+  from {
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes SPIN {
+  from {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes scaleout {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.hidden-spinner {
+  display: none;
+}
+
+.show-spinner {
+  display: block !important;
+}
+
+/* SVG Animation */
+svg path,
+svg rect {
+  fill: black;
+}

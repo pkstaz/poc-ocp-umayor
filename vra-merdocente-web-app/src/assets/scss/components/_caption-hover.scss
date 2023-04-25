@@ -1,0 +1,177 @@
+#caption-grid {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: center;
+  background-color: #facd06;
+  line-height: initial;
+  /* border: 3px solid #facd06; */
+  border-radius: 0.313rem;
+  @include border-box;
+
+  &:hover {
+    border-color: rgb(68, 68, 68);
+    @include shadow-bottom;
+  }
+
+  .wrapp-figure {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    position: relative;
+    @include border-box;
+
+    figure {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-align: initial;
+
+
+      .box {
+        width: 100%;
+        position: relative;
+        background-color: #feda3f;
+        text-align: center;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        min-height: 200px;
+
+        .icono-btn-proyecto {
+          font-size: 4rem;
+          display: block;
+        }
+
+        .title-proyecto {
+          font-family: "Open sans", Arial, sans-serif;
+          font-weight: 700;
+          display: inline-block;
+          margin: 0.25rem 0 0 0;
+        }
+      }
+
+      figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.125rem;
+        background: #444;
+        color: #fff;
+        min-height: 200px;
+
+        @media (max-width: 1024px) {
+          padding: 0.875rem;
+        }
+
+        h3 {
+          @include opensans(1rem, 600, #fff);
+          margin: 0 0 .313rem 0;
+          padding: 0;
+
+          @media (max-width: 1024px) {
+            font-size: .875rem;
+          }
+        }
+
+        span:before {
+          content: '¿Qué es?: ';
+          font-weight: bold;
+        }
+
+        .text-figcaption {
+          @include opensans(0.75rem, 400, #fff);
+          line-height: normal;
+          padding: 0;
+          margin: 0;
+          display: inline-block;
+          width: 100%;
+        }
+
+        .button-caption {
+          text-align: center;
+          padding: 5px 10px;
+          border-radius: 5px;
+          display: inline-block;
+          background: $green;
+          text-decoration: none;
+          @include opensans(.75rem, 400, #fff);
+          transition: all .2s ease-in-out;
+
+          @media (max-width: 1024px) {
+            font-size: .875rem;
+          }
+
+          &:hover {
+            background-color: #015764;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+  * Style-3
+  **/
+.cs-style-3 {
+  overflow: hidden;
+}
+
+.cs-style-3 figure .box {
+  -webkit-transition: -webkit-transform .4s;
+  -moz-transition: -moz-transform .4s;
+  -ms-transition: -ms-transition .4s;
+  -o-transition: -o-transition .4s;
+  transition: transform .4s;
+
+}
+
+.no-touch .cs-style-3 figure:hover .box,
+.cs-style-3 figure.cs-hover .box {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+.cs-style-3 figcaption {
+  height: 100px;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption .link-caption {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}

@@ -1,0 +1,79 @@
+ [
+    {
+      "cod_asignatura": "005",
+      "descripcion_asignatura": "Matemáticas",
+      "id_sm": 10,
+      "cod_modulo": "NBTYH3456",
+      "id_agrupador": "0010",
+      "regimen": "anual",
+      "diciplina": "taller",
+      "nivel": "superior",
+      "id_plan": "00155"
+    },
+    {
+      "cod_asignatura": "007",
+      "descripcion_asignatura": "Calculo I",
+      "id_sm": 10,
+      "cod_modulo": "LKMNG990",
+      "id_agrupador": "0010",
+      "regimen": "semestral",
+      "diciplina": "taller",
+      "nivel": "superior",
+      "id_plan": "00155"
+    },
+    {
+      "cod_asignatura": "0020",
+      "descripcion_asignatura": "Calculo II",
+      "id_sm": 10,
+      "cod_modulo": "ASWQV665",
+      "id_agrupador": "0010",
+      "regimen": "semestral",
+      "diciplina": "Área formación específica",
+      "nivel": "superior",
+      "id_plan": "00155"
+    },
+    {
+      "cod_asignatura": "0050",
+      "descripcion_asignatura": "Álgebra",
+      "id_sm": 10,
+      "cod_modulo": "CHYTW665",
+      "id_agrupador": "0010",
+      "regimen": "semestral",
+      "diciplina": "Área de formación básica",
+      "nivel": "superior",
+      "id_plan": "00155"
+    },
+    {
+      "cod_asignatura": "0078",
+      "descripcion_asignatura": "Calculo III",
+      "id_sm": 10,
+      "cod_modulo": "ABRRA772",
+      "id_agrupador": "0010",
+      "regimen": "semestral",
+      "diciplina": "Taller",
+      "nivel": "superior",
+      "id_plan": "00155"
+    },
+    {
+      "cod_asignatura": "0014",
+      "descripcion_asignatura": "Termodinámica",
+      "id_sm": 10,
+      "cod_modulo": "AYRT998",
+      "id_agrupador": "0010",
+      "regimen": "anual",
+      "diciplina": "Taller",
+      "nivel": "superior",
+      "id_plan": "00155"
+    },
+    {
+      "cod_asignatura": "007",
+      "descripcion_asignatura": "Física aplicada",
+      "id_sm": 10,
+      "cod_modulo": "ABNT345",
+      "id_agrupador": "0010",
+      "regimen": "semestral",
+      "diciplina": "Taller",
+      "nivel": "superior",
+      "id_plan": "00155"
+    }
+  ]

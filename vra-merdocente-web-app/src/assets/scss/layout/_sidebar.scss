@@ -1,0 +1,167 @@
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 996;
+  transition: all 0.3s;
+  padding: 20px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: $color-bgdark transparent;
+  box-shadow: 0px 0px 20px rgba(78, 78, 78, .1);
+  background-color: $color-bgdark;
+
+  @media (max-width: 1199px) {
+    left: -300px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: $gray-dark;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray-light;
+  }
+}
+
+#main,
+#footer {
+  @media (min-width: 1200px) {
+    margin-left: 300px;
+  }
+}
+
+.toggle-sidebar {
+  .sidebar {
+    @media (max-width: 1199px) {
+      left: 0;
+    }
+
+    @media (min-width: 1200px) {
+      left: -300px;
+    }
+  }
+
+  #main,
+  #footer {
+    @media (min-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+
+.sidebar-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-item {
+    margin-bottom: 5px;
+  }
+
+  .nav-heading {
+    font-size: 1rem;
+    color: #222;
+    font-weight: 600;
+    margin: 10px 5px;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3;
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 4px;
+
+    i {
+      font-size: 16px;
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    &.collapsed {
+      color: #fff;
+      background: #333;
+
+      i {
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      color: $yellow;
+      background: #444;
+
+      i {
+        color: $yellow;
+      }
+    }
+
+    .bi-chevron-down {
+      margin-right: 0;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &:not(.collapsed) {
+      .bi-chevron-down {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .nav-content {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style: none;
+    background-color: #3d3d3d;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #fff;
+      transition: 0.3;
+      padding: 10px 0 10px 40px;
+      transition: 0.3s;
+
+      i {
+        font-size: 6px;
+        margin-right: 8px;
+        line-height: 0;
+        border-radius: 50%;
+      }
+
+      &:hover,
+      &.active {
+        color: $yellow;
+      }
+
+      &.active {
+        i {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+}

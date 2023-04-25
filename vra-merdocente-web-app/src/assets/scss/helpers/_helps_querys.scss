@@ -1,0 +1,46 @@
+/*-------------------------------------------- Ayudas Querys*/
+/* Custom, iPhone Retina  (xxs) */ 
+@media only screen and (min-width: 250px) and (max-width: 320px) { 
+	.prueba {background-color: indigo;}
+    .margin-xxs {margin: 10px !important;padding: 0 !important;}
+    .padding-xxs {margin: 0 !important; padding: 10px !important;}
+    .no-margin-xxs, .no-padding-xxs {margin:0 !important;padding:0 !important;}
+}
+/*Hasta smartphones de 480px (xs) */
+@media only screen and (min-width: 321px) and (max-width: 480px) { 
+	.prueba {background-color: magenta;}
+    .margin-xs {margin: 10px !important;padding: 0 !important;}
+    .padding-xs {margin: 0 !important; padding: 10px !important;}
+    .no-m-xs, .no-p-xs {margin:0 !important;padding:0 !important;}
+}
+
+/* de Smartphones a Tablets (sm) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.prueba {background-color: cyan;}
+    .margin-sm {margin: 10px !important;padding: 0 !important;}
+    .padding-sm {margin: 0 !important; padding: 10px !important;}
+    .no-m-sm, .no-p-sm {margin:0 !important;padding:0 !important;}
+}
+
+/* de Tablets a pantallas de desktops (md) */
+@media only screen and (min-width: 769px) and (max-width: 1199px) { 
+	.prueba {background-color: tomato;}
+    .margin-md {margin: 10px !important;padding: 0 !important;}
+    .padding-md {margin: 0 !important; padding: 10px !important;}
+    .no-m-xmd, .no-p-md {margin:0 !important;padding:0 !important;}
+}
+
+/* Pantallas anchas (desktops) (lg) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) { 
+	.prueba {background-color: teal;}
+    .margin-lg {margin: 10px !important;padding: 0 !important;}
+    .padding-lg {margin: 0 !important; padding: 10px !important;}
+    .no-m-lg, .no-p-lg {margin:0 !important;padding:0 !important;}
+}
+/* Pantallas anchas (desktops) (xl) */
+@media only screen and ( min-width: 1400px) { 
+	.prueba {background-color: deeppink;}
+    .margin-xl {margin: 10px !important;padding: 0 !important;}
+    .padding-xl {margin: 0 !important; padding: 10px !important;}
+    .no-margin-xl, .no-padding-xl {margin:0 !important;padding:0 !important;}
+}

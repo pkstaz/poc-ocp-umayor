@@ -1,0 +1,351 @@
+/*
+ * @Help para maquetar
+ * Aplicación: aplicar al elemento HTML como un ID o Class
+ **/
+.border-1,
+#border-1 {
+  @include border_help(#000);
+}
+
+.border-2,
+#border-2 {
+  @include border_help(red);
+}
+
+.border-3,
+#border-3 {
+  @include border_help(cyan);
+}
+
+.border-4,
+#border-4 {
+  @include border_help(deeppink);
+}
+
+/* 
+ * @Help de maquetación y mixin
+ **/
+
+.air-margin {
+  @include space_margin();
+}
+
+.air-padding {
+  @include space_padding();
+}
+
+.n0 {
+  @include no_margin;
+}
+
+.p0 {
+  @include no_padding;
+}
+
+/* 
+ * @Help quitar espacios en modo in-block
+ * Aplicar en el div padre de los elementos a aplicar
+ **/
+.no-space {
+  font-size: 0;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+/* 
+ * @Help centrar elementos de forma vertical
+ * Aplicar en el div padre la class father y al higo la class center-child
+ **/
+.father {
+  position: relative;
+}
+
+.center-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.center-y {
+  display: table;
+  width: 100%;
+  min-height: 100%;
+
+  @media(max-width: 640px) {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+
+  .child-center {
+    display: table-cell;
+    vertical-align: middle;
+
+    @media(max-width: 640px) {
+      display: inline-block;
+      height: auto;
+    }
+
+    &.left {
+      text-align: left;
+      width: 100%;
+
+      @media(max-width: 640px) {
+        text-align: center;
+      }
+    }
+
+    &.right {
+      text-align: right;
+      width: 100%;
+
+      @media(max-width: 640px) {
+        text-align: center;
+      }
+    }
+
+    &.center {
+      text-align: center;
+      width: 100%;
+
+      @media(max-width: 640px) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* 
+ * @Help Efectos de sombra
+ * Aplicar en el div
+ **/
+
+
+.line-hr-black {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .26), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .26), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .26), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .26), rgba(0, 0, 0, 0));
+}
+
+.line-hr-white {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .50), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 509), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .50), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .50), rgba(255, 255, 255, 0));
+}
+
+.effect-shadow-2 {
+  position: relative;
+
+  &:before,
+  &:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+
+  &:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+  }
+}
+
+/* 
+* @css variables & mixin para fondos
+**/
+/*Ej. @include background(#f1f1f1, 'banner-liberamos.jpg', left, center, no-repeat, fixed, cover); */
+$assets_path: 'http://placeimg.com';
+$path_file: '../images/img-servicios';
+
+@mixin background ($bg-color, $img_uri, $value_x, $value_y, $repeat, $attachment, $value_size) {
+  background: $bg-color url(#{$path_file}/#{$img_uri}) $value_x $value_y $repeat $attachment/$value_size;
+}
+
+/* css para captcha google */
+@mixin re-captcha ($value_captcha:.77, $value_origin:0 0) {
+  transform: scale($value_captcha);
+  -webkit-transform: scale($value_captcha);
+  transform-origin: $value_origin;
+  -webkit-transform-origin: $value_origin;
+}
+
+
+
+// Breakpoint viewport sizes and media queries.
+//
+// Breakpoints are defined as a map of (name: minimum width), order from small to large:
+//
+//    (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+//
+// The map defined in the `$grid-breakpoints` global variable is used as the `$breakpoints` argument by default.
+
+// Name of the next breakpoint, or null for the last breakpoint.
+//
+//    >> breakpoint-next(sm)
+//    md
+//    >> breakpoint-next(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    md
+//    >> breakpoint-next(sm, $breakpoint-names: (xs sm md lg xl))
+//    md
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+//    >> breakpoint-min(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    576px
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min !=0, $min, null);
+}
+
+// Maximum breakpoint width. Null for the largest (last) breakpoint.
+// The maximum value is calculated as the minimum of the next one less 0.02px
+// to work around the limitations of `min-` and `max-` prefixes and viewports with fractional widths.
+// See https://www.w3.org/TR/mediaqueries-4/#mq-min-max
+// Uses 0.02px rather than 0.01px to work around a current rounding bug in Safari.
+// See https://bugs.webkit.org/show_bug.cgi?id=178261
+//
+//    >> breakpoint-max(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    767.98px
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - .02px, null);
+}
+
+// Returns a blank string if smallest breakpoint, otherwise returns the name with a dash infront.
+// Useful for making responsive utilities.
+//
+//    >> breakpoint-infix(xs, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    ""  (Returns a blank string)
+//    >> breakpoint-infix(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    "-sm"
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints)==null, "", "-#{$name}");
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
+
+// Media of at most the maximum breakpoint width. No query for the largest breakpoint.
+// Makes the @content apply to the given breakpoint and narrower.
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
+
+// Media that spans multiple breakpoint widths.
+// Makes the @content apply between the min and max breakpoints
+@mixin media-breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($lower, $breakpoints);
+  $max: breakpoint-max($upper, $breakpoints);
+
+  @if $min !=null and $max !=null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else if $max==null {
+    @include media-breakpoint-up($lower, $breakpoints) {
+      @content;
+    }
+  }
+
+  @else if $min==null {
+    @include media-breakpoint-down($upper, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+// Media between the breakpoint's minimum and maximum widths.
+// No minimum for the smallest breakpoint, and no maximum for the largest one.
+// Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
+@mixin media-breakpoint-only($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  $max: breakpoint-max($name, $breakpoints);
+
+  @if $min !=null and $max !=null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else if $max==null {
+    @include media-breakpoint-up($name, $breakpoints) {
+      @content;
+    }
+  }
+
+  @else if $min==null {
+    @include media-breakpoint-down($name, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440);

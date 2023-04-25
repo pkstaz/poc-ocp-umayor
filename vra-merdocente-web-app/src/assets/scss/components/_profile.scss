@@ -1,0 +1,124 @@
+/* SCSS HEX */
+$ming: #006878;
+$mustard: #feda3f;
+$cadmium-orange: #ea7a03;
+$onyx: #444444;
+$jet: #333333;
+$davys-grey: #4e4e4e;
+$black: #000000;
+$cultured: #eeeeee;
+$platinum: #e6e6e6;
+$sonic-silver: #737277;
+$taupe-gray: #87868a;
+$platinum: #e6e6e6;
+/*--------------------------------------------------------------
+# Profie Page
+--------------------------------------------------------------*/
+
+.profile {
+
+  .profile-card {
+    width: 100%;
+    min-height: 620px;
+
+    img {
+      max-width: 120px;
+    }
+
+    .fullname-profile {
+      @include opensans(1.6rem, 700, $onyx);
+      margin: 10px 0 0 0;
+    }
+
+    .occupation-profile {
+      @include opensans(1.2rem, 400, $onyx);
+      margin: 0;
+      padding: 0;
+    }
+
+    .fulldirection-profile {
+      @include opensans(1rem, 300, $onyx);
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .profile-tabs {
+    min-height: 620px;
+
+    .profile-overview {
+
+      .title {
+        @include opensans(1.3rem, 600, $onyx);
+        margin: 0 0 1rem 0;
+        padding: .5rem 0;
+      }
+
+      .sumary {
+        @include opensans(1rem, 400, $onyx);
+        margin: 0 0 .5rem 0;
+        padding: 0;
+      }
+
+      .wrapp-info-profile {
+        margin: 0 0 .6rem 0;
+
+        .label {
+          @include opensans(1rem, 600, $onyx);
+          margin: 0;
+          padding: 0;
+        }
+
+        .key-value {
+          @include opensans(1rem, 400, $onyx);
+          margin: 0;
+          padding: 0
+        }
+      }
+    }
+
+    .profile-edit {}
+
+    .profile-settings {}
+
+    .profile-change-password {}
+  }
+}
+
+
+
+.profile .profile-card .social-links a {
+  /*   font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s; */
+}
+
+.profile .profile-card .social-links a:hover {
+  /*  color: #012970; */
+}
+
+.profile .profile-overview .row {
+  /*   margin-bottom: 20px;
+  font-size: 15px; */
+}
+
+.profile .profile-overview .card-title {
+  /*  color: #012970; */
+}
+
+.profile .profile-overview .label {
+  /*   font-weight: 600;
+  color: rgba(1, 41, 112, 0.6); */
+}
+
+.profile .profile-edit label {
+  /*   font-weight: 600;
+  color: rgba(1, 41, 112, 0.6); */
+}
+
+.profile .profile-edit img {
+  /*   max-width: 120px; */
+}

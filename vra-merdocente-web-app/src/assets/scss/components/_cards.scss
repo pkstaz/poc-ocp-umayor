@@ -1,0 +1,201 @@
+@mixin card-inverse-variant($bg, $border, $color) {
+  background: $bg;
+  border: 1px solid $border;
+  color: $color;
+}
+
+$border-property: 1px solid #000;
+$card-spacing-y: 1.5rem;
+$card-padding-y: 1.5rem;
+$card-padding-x: 1.5rem;
+$card-border-radius: 20px;
+$card-border-color: #e3e3e3;
+$card-box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11),0 4px 16px 0 rgba(167, 175, 183, 0.33);
+$card-title-color: #010101;
+$card-description-color: #76838f;
+$grid-gutter-width: 30px;
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+$card-tale:#7DA0FA;
+$card-light-blue:#7978E9;
+$card-light-danger:#F3797E;
+/* Cards */
+
+.card {
+  border: none;
+
+  &.card-rounded {
+    border-radius: 15px;
+    box-shadow: none;
+    border: none;
+  }
+
+  &.table-darkBGImg {
+  /*   background: #1E283D url("../../images/dashboard/darkBG.png") repeat-y right top; */
+  }
+
+  &.tale-bg {
+    background: #DAE7FF;
+  }
+
+  &.transparent {
+    background: transparent;
+  }
+
+  border: none;
+
+  .card-body {
+    padding: $card-padding-y $card-padding-x;
+
+    +.card-body {
+      padding-top: 1rem;
+    }
+  }
+
+  .card-title {
+    color: #1E283D;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+    font-weight: 600;
+
+    &.card-title-dash {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 22px;
+      color: #010101;
+      margin-bottom: 2px;
+
+      &.card-subtitle-dash {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        color: #010101;
+        margin: 0;
+      }
+    }
+  }
+
+  .card-subtitle {
+    font-weight: 400;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+
+  }
+
+  .card-description {
+    margin-bottom: .875rem;
+    font-weight: 400;
+    color: $card-description-color;
+  }
+
+  &.card-outline-success {
+    border: 1px solid theme-color("success");
+  }
+
+  &.card-outline-primary {
+    border: 1px solid theme-color("primary");
+  }
+
+  &.card-outline-warning {
+    border: 1px solid theme-color("warning");
+  }
+
+  &.card-outline-danger {
+    border: 1px solid theme-color("danger");
+  }
+
+  &.card-faded {
+    background: #b5b0b2;
+    border-color: #b5b0b2;
+  }
+
+  &.card-circle-progress {
+    color: #fff;
+    text-align: center;
+  }
+
+  &.card-img-holder {
+    position: relative;
+
+    .card-img-absolute {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  }
+
+  &.card-weather {
+    .weather-daily {
+      .weather-day {
+        opacity: .5;
+        font-weight: 900;
+      }
+
+      i {
+        font-size: 20px;
+      }
+
+      .weather-temp {
+        margin-top: .5rem;
+        margin-bottom: 0;
+        opacity: .5;
+        font-size: .75rem;
+      }
+    }
+  }
+
+  &.card-tale {
+    background: $card-tale;
+    color: #fff;
+
+    &:hover {
+      background: lighten($card-tale, 5%)
+    }
+  }
+
+  &.card-dark-blue {
+    background: #4747A1;
+    color: #fff;
+
+    &:hover {
+      background: lighten(#4747A1, 5%)
+    }
+  }
+
+  &.card-light-blue {
+    background: $card-light-blue;
+    color: #fff;
+
+    &:hover {
+      background: lighten($card-light-blue, 5%)
+    }
+  }
+
+  &.card-light-danger {
+    background: $card-light-danger;
+    color: #fff;
+
+    &:hover {
+      background: lighten($card-light-danger, 5%)
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 3;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+
+    .card {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0.75rem;
+    }
+  }
+}

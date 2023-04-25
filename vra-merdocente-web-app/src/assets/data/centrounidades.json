@@ -1,0 +1,114 @@
+{
+  "escuelaunidad": [
+    { 
+      "group": "Conservatorio de Música", 
+       "items" :[ 
+       {"id": 1  , "name": "Conservatorio de Música"}
+       ]
+     },
+     {
+      "group": "Facultad de Artes", 
+     "items" :[ 
+          { "id": 2  , "name": "Centro de Investigación en Artes y Humanidades"  }, 
+          { "id": 3  , "name": "Escuela de Teatro"  }, 
+          { "id": 4  , "name": "Escuela de Animación Digital"  }, 
+          { "id": 5  , "name": "Escuela de Cine"  }, 
+          { "id": 6  , "name": "Escuela de Diseño"  }
+  
+        ]
+     },
+     {
+       "group": "Facultad de Ciencias", 
+     "items" :[ 
+           
+          { "id": 7  , "name": "Centro de Genómica y Bioinformática"  }, 
+          { "id": 8  , "name": "Centro de Biología Integrativa"  }, 
+          { "id": 9  , "name": "Centro de Óptica e Información Cuántica"  }, 
+          { "id": 10  , "name": "Centro de Nanotecnología Aplicada"  }, 
+          { "id": 11  , "name": "Centro GEMA - Genómica, Ecología y Medio Ambiente"  }, 
+          { "id": 12  , "name": "Centro de Investigación en Fisiología del Ejercicio"  }, 
+          { "id": 13  , "name": "Centro de Modelación y Monitoreo de Ecosistemas"  }, 
+          { "id": 14  , "name": "Centro Tecnológico TerritorioMayor"  }, 
+          { "id": 15  , "name": "Centro Tecnológico de Recursos Vegetales"  }, 
+          { "id": 16  , "name": "Centro de Observación de la Tierra HÉMERA"  }, 
+          { "id": 17  , "name": "Centro de Investigación en Ciberseguridad"  }, 
+          { "id": 18  , "name": "Escuela de Medicina"  }, 
+          { "id": 19  , "name": "Escuela de Odontología"  }, 
+          { "id": 20  , "name": "Escuela de Enfermería"  }, 
+          { "id": 21  , "name": "Escuela de Obstetricia y Puericultura"  }, 
+          { "id": 22  , "name": "Escuela de Nutrición y Dietética"  }, 
+          { "id": 23  , "name": "Escuela de Kinesiología"  }, 
+          { "id": 24  , "name": "Escuela de Tecnología Médica"  }, 
+          { "id": 25  , "name": "Escuela de Terapia Ocupacional"  }, 
+          { "id": 26  , "name": "Escuela de Fonoaudiología"  }, 
+          { "id": 27  , "name": "Escuela de Psicología"  }, 
+          { "id": 28  , "name": "Escuela de Biotecnología"  }, 
+          { "id": 29  , "name": "Escuela de Agronomía"  }, 
+          { "id": 30  , "name": "Escuela de Medicina Veterinaria"  }, 
+          { "id": 31  , "name": "Escuela de Ingeniería Forestal"  }, 
+          { "id": 32  , "name": "Escuela de Ingeniería en Medio Ambiente y Sustentabilidad"  }, 
+          { "id": 33  , "name": "Escuela de Geología"  }, 
+          { "id": 34  , "name": "Escuela de Construcción Civil"  }, 
+          { "id": 35  , "name": "Escuela de Ingeniería Civil Industrial"  }, 
+          { "id": 36  , "name": "Escuela de Ingeniería Civil Electrónica"  }, 
+          { "id": 37  , "name": "Escuela de Ingeniería Civil en Computación e Informática"  }, 
+          { "id": 38  , "name": "Escuela de Medicina (T)"  }, 
+          { "id": 39  , "name": "Escuela de Odontología (T)"  }, 
+          { "id": 40  , "name": "Escuela de Enfermería (T)"  }, 
+          { "id": 41  , "name": "Escuela de Obstetricia y Puericultura (T)"  }, 
+          { "id": 42  , "name": "Escuela de Nutrición y Dietética (T)"  }, 
+          { "id": 43  , "name": "Escuela de Kinesiología (T)"  }, 
+          { "id": 44  , "name": "Escuela de Tecnología Médica (T)"  }, 
+          { "id": 45  , "name": "Escuela de Terapia Ocupacional (T)"  }, 
+          { "id": 46  , "name": "Escuela de Fonoaudiología (T)"  }, 
+          { "id": 47  , "name": "Escuela de Psicología (T)"  }, 
+          { "id": 48  , "name": "Escuela de Medicina Veterinaria (T)"  }, 
+          { "id": 49  , "name": "Escuela de Ingeniería en Construcción (T)"  }, 
+          { "id": 50  , "name": "Escuela de Ingeniería Civil Industrial (T)"  }
+  
+           ]
+      },
+           {
+             "group": "Facultad de Estudios Interdisciplinarios", 
+           "items" :[ 
+           
+          { "id": 51  , "name": "Centro de Investigación DAiTA Lab"  }, 
+          { "id": 52  , "name": "Bachillerato en Ciencias de la Salud"  }, 
+          { "id": 53  , "name": "Núcleo de Matemáticas Física y Estadística"  }, 
+          { "id": 54  , "name": "Núcleo de Ciencias Biológicas"  }, 
+          { "id": 55  , "name": "Núcleo de Química y Bioquímica"  }, 
+          { "id": 56  , "name": "Núcleo de Formación General"  }, 
+          { "id": 57  , "name": "Núcleo de Idiomas"  }, 
+          { "id": 58  , "name": "Núcleo de Psicología"  }, 
+          { "id": 59  , "name": "Núcleo de Salud Pública"  }
+  
+            ]
+      },
+      {
+       "group": "Facultad de Humanidades", 
+          "items" :[ 
+     
+          { "id": 60  , "name": "Centro de Investigación en Sociedad y Salud"  }, 
+          { "id": 61  , "name": "Centro de Investigación en Economía y Políticas Sociales"  }, 
+          { "id": 62  , "name": "Centro de Investigación en Sociedad Tecnológica y Futuro Humano"  }, 
+          { "id": 63  , "name": "Escuela de Derecho"  }, 
+          { "id": 64  , "name": "Escuela de Arquitectura"  }, 
+          { "id": 65  , "name": "Escuela de Ingeniería Comercial"  }, 
+          { "id": 66  , "name": "Escuela de Ingeniería en Administración"  }, 
+          { "id": 67  , "name": "Escuela de Pedagogía en Educación Parvularia"  }, 
+          { "id": 68  , "name": "Escuela de Pedagogía en Educación Diferencial"  }, 
+          { "id": 69  , "name": "Escuela de Pedagogía en Educación Física"  }, 
+          { "id": 70  , "name": "Escuela de Pedagogía en Inglés"  }, 
+          { "id": 71  , "name": "Escuela de Pedagogía en Artes Musicales"  }, 
+          { "id": 72  , "name": "Escuela de Psicopedagogía"  }, 
+          { "id": 73  , "name": "Escuela de Administración Pública"  }, 
+          { "id": 74  , "name": "Escuela de Sociología"  }, 
+          { "id": 75  , "name": "Escuela de Periodismo"  }, 
+          { "id": 76  , "name": "Escuela de Derecho (T)"  }, 
+          { "id": 77  , "name": "Escuela de Arquitectura (T)"  }, 
+          { "id": 78  , "name": "Escuela de Ingeniería Comercial (T)" }
+          ]
+    
+      }
+    ]
+  }

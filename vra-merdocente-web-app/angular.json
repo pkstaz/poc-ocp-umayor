@@ -1,0 +1,140 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "vra-merdocente-web-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/vra-merdocente-web-app",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/angular-calendar/css/angular-calendar.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/angular-calendar/css/angular-calendar.css",
+              "./src/assets/lib/select2/dist/css/select2.min.css",
+              "./src/assets/lib/select2/select2-bootstrap-5-theme-master/select2-bootstrap-5-theme.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+							"node_modules/@ng-select/ng-select/themes/default.theme.css",
+              "node_modules/animate.css/animate.min.css",
+              "./src/assets/lib/bootstrap-icons/bootstrap-icons.css",
+              "./src/assets/lib/boxicons/css/boxicons.min.css",
+              "./src/assets/lib/remixicon/remixicon.css",
+              "./src/assets/css/style-nice-admin.css",
+              "./src/assets/lib/prism/prism.css",              
+              "node_modules/datatables.net-select-dt/css/select.dataTables.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/flatpickr/dist/flatpickr.css",
+              "node_modules/angular-calendar/css/angular-calendar.css", 
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+              "./src/assets/lib/select2/dist/js/select2.full.min.js",
+              "./src/assets/lib/select2/dist/js/select2-custom.js",
+              "node_modules/datatables.net/js/jquery.dataTables.min.js",
+              "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js",
+              "node_modules/datatables.net-select/js/dataTables.select.js",
+              "./src/assets/js/custom-project.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src/assets/scss"
+              ]
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "vra-merdocente-web-app:build:production"
+            },
+            "development": {
+              "browserTarget": "vra-merdocente-web-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "vra-merdocente-web-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/angular-calendar/css/angular-calendar.css",
+              "node_modules/angular-calendar/css/angular-calendar.css",
+              "src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}

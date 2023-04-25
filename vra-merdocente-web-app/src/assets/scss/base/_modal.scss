@@ -1,0 +1,491 @@
+/*
+* @css modales
+**/
+
+
+/*
+* @Mixin de modal
+**/
+@mixin modal-size ($value-width, $y_margin, $x_margin) {
+  width: $value-width;
+  height: auto;
+  margin: $y_margin $x_margin;
+}
+
+@mixin mod-center {
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+}
+
+/*
+ * clases modales independientes.
+ * centrar modal desde <div class="modal-dialog modal-center" role="document">
+ **/
+.modal-center {
+  @include mod-center;
+  margin-top: 0;
+  max-width: 1024px;
+}
+
+#container-modal {
+  width: auto !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+.wrapper-mod-video {
+  padding: 1%;
+}
+
+.wrapper-md-content {
+  padding: 1.5%;
+}
+
+.wrapper-btn-modal {
+  display: inline-block;
+  padding: 1% 2%;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+}
+
+/*
+ * Los tamaños de los modales se aplican desde:
+ * <div class="modal-dialog mod-lg" role="document">
+ **/
+
+.mod-md {
+  @include modal-size (65%, 0, auto);
+}
+
+.mod-xs {
+  @include modal-size (20%, 0, auto);
+}
+
+.mod-sm {
+  @include modal-size (30%, 0, auto);
+}
+
+.mod-lg {
+  @include modal-size (95%, 0, auto);
+}
+
+.mod-auto {
+  @include modal-size(auto, 0, auto);
+}
+
+/*
+* querys modale
+*---------------------------------------------------*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 250px) and (max-width: 320px) {
+
+  .mod-xs,
+  .mod-sm,
+  .mod-md,
+  mod-lg {
+    @include modal-size(80%, 0, auto);
+  }
+}
+
+/*Hasta smartphones de 480px*/
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+
+  .mod-xs,
+  .mod-sm,
+  .mod-md,
+  mod-lg {
+    @include modal-size(80%, 0, auto);
+  }
+}
+
+/* de Smartphones a Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  .mod-xs,
+  .mod-sm,
+  .mod-md,
+  mod-lg {
+    @include modal-size(70%, 0, auto);
+  }
+}
+
+/* de Tablets a pantallas de desktops */
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+
+  .mod-xs,
+  .mod-sm,
+  .mod-md,
+  mod-lg {
+    @include modal-size(50%, 0, auto);
+  }
+}
+
+/* Pantallas anchas (desktops) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+  .mod-xs,
+  .mod-sm,
+  .mod-md,
+  mod-lg {
+    @include modal-size(30%, 0, auto);
+  }
+}
+
+/* Pantallas anchas (hd) */
+@media only screen and (min-width: 1400px) {
+  /* css */
+}
+
+/*
+* @Modales personalizados
+*----------------------------------------------------*/
+
+/*
+ * Uso de los custom modal es:
+ * Definir tipo de modal color: class="modal-content [modal-success]"
+ * Definir color modal: class="modal-content notify--info"
+ **/
+.modal {
+  .modal-dialog {
+    .modal-content {
+
+      &.modal-danger {
+        .modal-content {
+          .modal-header {
+            color: #fff;
+            background-color: $color_danger;
+            border-color: #f5c6cb;
+            padding: 0.75rem;
+
+            .modal-icon {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 1.8rem;
+              margin: 0 .2em 0 0;
+              line-height: normal;
+            }
+
+            .modal-title {
+              display: inline-block;
+              vertical-align: middle;
+              @include opensans(1.6rem, 500, #fff);
+              line-height: normal;
+              margin: 0;
+            }
+          }
+
+          .modal-body {
+            background-color: #f8d7da;
+            color: #721c24;
+          }
+
+          .modal-footer {
+            border-top: 1px solid #efb8b4;
+          }
+        }
+      }
+
+      &.modal-success {
+        .modal-content {
+          .modal-header {
+            color: #fff;
+            background-color: $color_success;
+            border-color: $color_success;
+            padding: 0.75rem;
+
+            .modal-icon {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 1.8rem;
+              margin: 0 .2em 0 0;
+              line-height: normal;
+            }
+
+            .modal-title {
+              display: inline-block;
+              vertical-align: middle;
+              @include opensans(1.6rem, 500, #fff);
+              line-height: normal;
+              margin: 0;
+            }
+          }
+
+          .modal-body {
+            color: #155724;
+            background-color: #d4edda;
+          }
+
+          .modal-footer {
+            border-top: 1px solid $color_success;
+          }
+        }
+      }
+
+      &.modal-warning {
+        .modal-header {
+          color: #856404;
+          background-color: #fff3cd;
+          border-color: #ffeeba;
+          padding: 0.75rem;
+          .header-icono {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.8rem;
+            margin: 0;
+            line-height: normal;
+          }
+          .modal-title {
+            display: inline-block;
+            vertical-align: middle;
+            @include opensans(1.6rem, 500, #856404);
+            line-height: normal;
+            margin: 0;
+          }
+        }
+        .modal-body {
+          color: #856404;
+          background-color: #fff3cd;
+          border-color: #ffeeba;
+          p {
+            @include opensans(.875rem, 400, #856404);
+            margin: .25rem 0;
+            padding: 0;
+          }
+          span.body-icono {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 3.5rem;
+            margin: 0 0 .25rem 0;
+            line-height: 100%;
+          }
+        }
+        .modal-footer {
+          background-color: #fff3cd;
+          border-top: 1px solid #fbe299;
+        }
+      }
+
+      &.modal-info {
+        .modal-content {
+          .modal-header {
+            color: #fff;
+            background-color: $color_info;
+            border-color: $color_info;
+
+            .icon-header {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 1.8rem;
+              margin: 0 .2em 0 0;
+              line-height: normal;
+            }
+
+            .modal-title {
+              display: inline-block;
+              vertical-align: middle;
+              @include opensans(1.6rem, 500, #fff);
+              line-height: normal;
+              margin: 0;
+            }
+          }
+
+          .modal-body {
+            color: #0c5460;
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
+
+            span.body-icono {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 1.8rem;
+              margin: 0 .2em 0 0;
+              line-height: normal;
+            }
+          }
+
+          .modal-footer {
+            border-top: 1px solid $color_info;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*.modal-success {
+  background-color: $color_success;
+  color: #fff;
+}
+
+.modal-info {
+  background-color: $color_info;
+  color: #fff;
+}
+
+.modal-danger {
+  background-color: $color_danger;
+  color: #fff;
+}
+
+.modal-warning {
+  background-color: $color_warning;
+  color: #fff;
+}*/
+
+/*
+ * @Types modals notificaciones
+ * Uso de las notificacione smodales es:
+ * Definir tipo de modal: class="modal-dialog modal-side modal-bottom-right"
+ * Definir color modal: class="modal-content notify--info"
+ **/
+.modal {
+  .modal-dialog {
+
+    /*
+    * @Type modal
+    **/
+    &.modal-side {
+      position: absolute;
+      width: 400px;
+      margin: 0;
+
+      &.modal-bottom-right {
+        right: 10px;
+        bottom: 10px;
+      }
+
+      &.modal-bottom-left {
+        left: 10px;
+        bottom: 10px;
+      }
+    }
+
+    /* modal-fluid */
+    &.modal-full-height {
+      position: absolute;
+      top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 400px;
+      height: auto;
+      min-height: 100%;
+      margin: 0;
+
+      &.full-height-right {
+        right: 0;
+      }
+
+      &.full-height-left {
+        left: 0;
+      }
+    }
+
+    /*modal-cookies */
+    &.modal-cookies {
+      position: absolute;
+      width: 100%;
+      max-width: 100% !important;
+      margin: 0 !important;
+
+      &.modal-bottom {
+        bottom: 0;
+      }
+
+      &.modal-top {
+        top: 0;
+      }
+
+      &.modal-bottom,
+      &.modal-top {
+        .modal-content {
+          .modal-header {
+            padding: 0;
+          }
+
+          .modal-body {
+            text-align: center;
+          }
+
+          .modal-footer {
+            display: none;
+          }
+        }
+      }
+
+
+    }
+
+    /* contenido */
+    .modal-content {
+      border: 0;
+      border-radius: .125rem;
+      -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+/*
+ * @colores de notificaciones
+ **/
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      &.notify--danger {
+        background-color: $color_danger;
+        color: #fff;
+        padding: 1%;
+      }
+
+      &.notify--success {
+        background-color: $color_success;
+        color: #fff;
+        padding: 1%;
+      }
+
+      &.notify--warning {
+        background-color: $color_warning;
+        color: #fff;
+        padding: 1%;
+      }
+
+      &.notify--info {
+        background-color: $color_info;
+        color: #fff;
+        padding: 1%;
+      }
+
+      .modal-header {
+        padding: .75rem;
+        border: none;
+      }
+
+      .modal-body {
+        @include opensans(1rem, 400, #fff);
+        border: none;
+
+        .notify-icon {
+          font-size: 1.6rem;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 .5rem 0 0;
+        }
+      }
+
+      .modal-footer {
+        padding: .75rem;
+        border: none;
+      }
+    }
+  }
+}
