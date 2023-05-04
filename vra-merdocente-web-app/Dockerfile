@@ -10,9 +10,9 @@ COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
 # Generate the build of the application
-RUN npm run build --prod --output-path=/dist
+RUN npm run build
 
-FROM ubi9/httpd-24
+FROM httpd:latest
 COPY ./httpd.conf /usr/local/apache2/conf
 COPY --from=builder /app/dist/vra-merdocente-web-app /usr/local/apache2/htdocs/
 EXPOSE 8080:8080
