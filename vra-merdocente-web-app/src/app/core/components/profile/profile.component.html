@@ -1,0 +1,455 @@
+<section class="section profile">
+	<div class="row">
+		<div class="col-lg-4">
+
+			<div class="card shadow-md profile-card">
+				<div class="card-body">
+					<div class="d-flex flex-column align-items-center text-center">
+						<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin"
+							class="rounded-circle p-1 bg-primary" width="110">
+						<div class="mt-3">
+							<h4 class="fullname-profile">{{ docentesPerfil.nombre === undefined ? "" : docentesPerfil.nombre }}</h4>
+							<p class="occupation-profile">{{ docentesPerfil.titulo === undefined ? "" : docentesPerfil.titulo }}</p>
+							<p class="fulldirection-profile">{{ docentesPerfil.funcion_ppal === undefined ? "" :
+								docentesPerfil.funcion_ppal }}</p>
+							<div class="wrapp-btn p-2">
+								<button class="btn btn-full-custom verde">Seguir</button>
+								<button class="btn btn-full-custom naranjo mx-2">Mensaje</button>
+							</div>
+						</div>
+					</div>
+					<hr class="my-4">
+					<ul class="list-group list-group-flush redes-sociales-perfil">
+						<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+							<h6 class="mb-0 title-icono"><i class="bx bxl-linkedin icono"></i>
+								Linkedin</h6>
+							<span class="text-secondary">johnDoe</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+							<h6 class="mb-0 title-icono"><i class="bx bxl-twitter icono"></i>Twitter</h6>
+							<span class="text-secondary">johnDoe</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+							<h6 class="mb-0 title-icono"><i class="bx bxl-facebook icono"></i>Facebook</h6>
+							<span class="text-secondary">johnDoe</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+							<h6 class="mb-0 title-icono"><i class="bx bxl-whatsapp icono"></i>Whatsapp</h6>
+							<span class="text-secondary">+569 912345678</span>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-lg-8">
+
+			<div class="card shadow-md profile-tabs">
+				<div class="card-body pt-3">
+					<!-- Bordered Tabs -->
+					<ul class="nav nav-tabs nav-tabs-bordered">
+						<li class="nav-item">
+							<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Resumen</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Editar perfil</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Settings</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Cambiar
+								Password</button>
+						</li>
+					</ul>
+					<div class="tab-content p-3">
+
+						<div class="tab-pane fade show active profile-overview  pt-3" id="profile-overview">
+
+							<div class="container">
+								<h5 class="title">Sobre mi</h5>
+								<p class="sumary">Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora
+									libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis
+									odit. Fuga sequi sed ea saepe at unde.</p>
+
+								<h5 class="title">Detalles perfil</h5>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Nombres</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ docentesPerfil.nombre === undefined ? "" :
+										docentesPerfil.nombre }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Facultad</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ docentesPerfil.facultad === undefined ? "" :
+										docentesPerfil.facultad }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Función Principal</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ docentesPerfil.funcion_ppal === undefined ? "" :
+										docentesPerfil.funcion_ppal }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Division</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ docentesPerfil.division === undefined ? "" :
+										docentesPerfil.division }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Esc.Carr.Nuc</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ docentesPerfil.esc_carr_nuc === undefined ? "" :
+										docentesPerfil.esc_carr_nuc }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Jornada</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ docentesPerfil.jornada_ctto === undefined ? "" :
+										docentesPerfil.jornada_ctto }}</div>
+								</div>
+
+								<div class="row wrapp-info-profile">
+									<div class="col-lg-3 col-md-4 label">Email</div>
+									<div class="col-lg-9 col-md-8 key-value">{{ docentesPerfil.email === undefined ? "" :
+										docentesPerfil.email }}</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+							<!-- Profile Edit Form -->
+
+
+							<form>
+								<div class="row mb-3">
+									<label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+									<div class="col-md-8 col-lg-9">
+										<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="p-1 bg-primary"
+											width="110">
+										<div class="wrapp-btn mt-3">
+											<a href="#" class="btn btn-full-custom verde" title="Upload new profile image"><i
+													class="bi bi-upload"></i></a>
+											<a href="#" class="btn btn-full-custom naranjo mx-2" title="Remove my profile image"><i
+													class="bi bi-trash"></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Nombres</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Apellido Paterno</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Apellido Materno</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3"><label for="inputPassword"
+										class="col-sm-3 col-form-label custom-label">Textarea</label>
+									<div class="col-sm-9">
+										<textarea class="form-control custom-form-control" style="height: 100px;"></textarea>
+									</div>
+								</div>
+
+								<div class="row form-group mb-3"><label
+										class="col-sm-3 col-form-label custom-label">Esc/Carr/Núcl</label>
+									<div class="col-sm-9"><select aria-label="Default select example"
+											class="form-select custom-form-select">
+											<option selected="">Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select></div>
+								</div>
+
+								<div class="row form-group mb-3"><label class="col-sm-3 col-form-label custom-label">Area
+										Personal</label>
+									<div class="col-sm-9"><select aria-label="Default select example"
+											class="form-select custom-form-select">
+											<option selected="">Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select></div>
+								</div>
+
+								<div class="row form-group mb-3"><label class="col-sm-3 col-form-label custom-label">Facultad</label>
+									<div class="col-sm-9"><select aria-label="Default select example"
+											class="form-select custom-form-select">
+											<option selected="">Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select></div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label class="col-sm-3 col-form-label custom-label">Div.Personal</label>
+									<div class="col-sm-9">
+										<select aria-label="Default select example" class="form-select custom-form-select">
+											<option selected="">Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label class="col-sm-3 col-form-label custom-label">Jerarquía</label>
+									<div class="col-sm-9">
+										<select class="select2 form-control custom-form-select" multiple="multiple"
+											style="height: 36px;width: 100%;">
+											<optgroup label="Alaskan/Hawaiian Time Zone">
+												<option value="AK">Alaska</option>
+												<option value="HI">Hawaii</option>
+											</optgroup>
+											<optgroup label="Pacific Time Zone">
+												<option value="CA">California</option>
+												<option value="NV">Nevada</option>
+												<option value="OR">Oregon</option>
+												<option value="WA">Washington</option>
+											</optgroup>
+											<optgroup label="Mountain Time Zone">
+												<option value="AZ">Arizona</option>
+												<option value="CO">Colorado</option>
+												<option value="ID">Idaho</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NM" selected>New Mexico</option>
+												<option value="ND">North Dakota</option>
+												<option value="UT">Utah</option>
+												<option value="WY">Wyoming</option>
+											</optgroup>
+											<optgroup label="Central Time Zone">
+												<option value="AL">Alabama</option>
+												<option value="AR">Arkansas</option>
+												<option value="IL">Illinois</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="OK">Oklahoma</option>
+												<option value="SD" selected>South Dakota</option>
+												<option value="TX">Texas</option>
+												<option value="TN">Tennessee</option>
+												<option value="WI">Wisconsin</option>
+											</optgroup>
+											<optgroup label="Eastern Time Zone">
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="IN">Indiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="OH">Ohio</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WV">West Virginia</option>
+											</optgroup>
+										</select>
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Titulo</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Nivel Educ.Máx.</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Email</label>
+									<div class="col-sm-9">
+										<input type="email" id="inputText" class="form-control custom-form-control"
+											value="anderson@example.com">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Teléfono</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Jornada Contratada</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control"
+											value="1/2 Jornada (22,30 Hrs. Sem.)">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Función Principal</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control" value="Académico">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Función Secundaria</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control" value="ACADÉMICO REGULAR"
+											disabled>
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Twitter Profile</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control" value="https://">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Facebook Profile</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control" value="https://">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="inputEmail3" class="col-sm-3 col-form-label custom-label">Linkedin Profile</label>
+									<div class="col-sm-9">
+										<input type="text" id="inputText" class="form-control custom-form-control" value="https://">
+									</div>
+								</div>
+
+
+
+
+								<div class="wrapp-btn btn-right mt-3">
+									<button type="submit" class="btn btn-full-custom verde">Guardar cambios <i
+											class="bi bi-save"></i></button>
+								</div>
+
+							</form><!-- End Profile Edit Form -->
+
+						</div>
+
+						<div class="tab-pane fade profile-settings pt-3" id="profile-settings">
+
+							<!-- Settings Form -->
+							<form>
+
+								<div class="row form-group mb-3">
+									<label for="fullName" class="col-md-4 col-lg-3 col-form-label">Notificaciones por email</label>
+									<div class="col-md-8 col-lg-9">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="changesMade" checked>
+											<label class="form-check-label" for="changesMade">
+												Cambios en la cuenta
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="newProducts" checked>
+											<label class="form-check-label" for="newProducts">
+												Información de nuevos puestos
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="proOffers">
+											<label class="form-check-label" for="proOffers">
+												Información email de marketing de la Universidad
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="securityNotify" checked disabled>
+											<label class="form-check-label" for="securityNotify">
+												Alertas de mensajes
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="wrapp-btn btn-right mt-3">
+									<button type="submit" class="btn btn-full-custom verde">Guardar cambios <i
+											class="bi bi-save"></i></button>
+								</div>
+							</form><!-- End settings Form -->
+
+						</div>
+
+						<div class="tab-pane fade profile-change-password pt-3" id="profile-change-password">
+							<!-- Change Password Form -->
+							<form>
+
+								<div class="row form-group mb-3">
+									<label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Cambio de password</label>
+									<div class="col-md-8 col-lg-9">
+										<input name="password" type="password" class="form-control custom-form-control"
+											id="currentPassword">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Nueva Password</label>
+									<div class="col-md-8 col-lg-9">
+										<input name="newpassword" type="password" class="form-control custom-form-control" id="newPassword">
+									</div>
+								</div>
+
+								<div class="row form-group mb-3">
+									<label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-ingresar nueva Password</label>
+									<div class="col-md-8 col-lg-9">
+										<input name="renewpassword" type="password" class="form-control custom-form-control"
+											id="renewPassword">
+									</div>
+								</div>
+
+								<div class="wrapp-btn btn-right mt-3">
+									<button type="submit" class="btn btn-full-custom verde">Guardar cambios <i
+											class="bi bi-save"></i></button>
+								</div>
+							</form><!-- End Change Password Form -->
+
+						</div>
+
+					</div><!-- End Bordered Tabs -->
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>

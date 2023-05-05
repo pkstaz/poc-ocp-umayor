@@ -42,11 +42,11 @@ testem.log
 Thumbs.db
 
 # Custom files, folders
-/src/app/core/components
-/src/app/core/components/*
-respaldo/*
-respaldo
-/src/app/core/components
-/src/app/core/components/*
-/respaldo/*
-respaldo
+#/src/app/core/components
+#respaldo/*
+#/src/app/core/components/*
+#respaldo
+#/src/app/core/components
+#/src/app/core/components/*
+#/respaldo/*
+#respaldo
